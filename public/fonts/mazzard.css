@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Mazzard Light';
+    font-style: normal;
+    src: url('./MazzardH-ExtraLight.ttf');
+  }
+@font-face {
+  font-family: 'Mazzard';
+  font-style: normal;
+  src: url('./MazzardH-Black.ttf');
+}
+@font-face {
+  font-family: 'Mazzard Bold';
+  font-style: normal;
+  src: url('./MazzardH-Bold.ttf');
+}
+@font-face {
+  font-family: 'Mazzard EBold';
+  font-style: normal;
+  src: url('./MazzardH-ExtraBold.ttf');
+}

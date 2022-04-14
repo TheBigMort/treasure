@@ -1,0 +1,50 @@
+{
+  "tokenId": 432,
+  "name": "Club Cards Series 1 432",
+  "animation_url": "ipfs://Qmb7F4JpKF2cdq5JCHvyvjLnMouAixasiz4XqBchgmJwY9/HakeemOlajukong_Legendary.mp4",
+  "attributes": [
+    {
+      "trait_type": "name",
+      "value": "HAKEEM OLAJUKONG"
+    },
+    {
+      "trait_type": "type",
+      "value": "LEGENDARY"
+    },
+    {
+      "trait_type": "soundtrack",
+      "value": "CHAMPION"
+    },
+    {
+      "trait_type": "element",
+      "value": "ELECTRICITY"
+    },
+    {
+      "trait_type": "background",
+      "value": "SPACE TRAVEL"
+    },
+    {
+      "trait_type": "footer",
+      "value": "SPECTRUM"
+    },
+    {
+      "trait_type": "window",
+      "value": "NAME IN LIGHTS"
+    },
+    {
+      "trait_type": "border",
+      "value": "COLOR"
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Points",
+      "value": 100
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Wave",
+      "value": 2
+    }
+  ],
+  "locked": "https://gateway.pinata.cloud/ipfs/QmatXMb9igwmEK8dyjGvwksfcovKG1ieJ9aj11iSgYNRUd"
+}
