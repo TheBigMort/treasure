@@ -24,13 +24,15 @@ const RoadmapItem: FC<RoadmapItemType> = ({ title, content, extras }) => {
     >
       <Stack direction="row" alignItems="baseline" justifyContent="center">
         <Icon
-          color="secondary"
+          /*@ts-ignore*/
+          color="#FFFFFF"
           sx={{ height: "16px", fontWeight: "bold" }}
           component={HiOutlineChevronRight}
         />
         <Typography
           fontWeight="bold"
           fontSize="1.6rem"
+          color="secondary"
           sx={{ textTransform: "uppercase" }}
         >
           {title}
