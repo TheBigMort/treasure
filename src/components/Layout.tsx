@@ -28,6 +28,7 @@ const Alert = forwardRef(function Alert(props, ref) {
 });
 
 const Layout: FC<LayoutProps> = ({ children, seo }) => {
+
   const [snackbar, setSnackbar] = useAtom(snackbarAtom);
   const handleClose = useCallback(
     () => setSnackbar({ ...snackbar, isOpen: false }),
@@ -45,7 +46,9 @@ const Layout: FC<LayoutProps> = ({ children, seo }) => {
         description={description}
         openGraph={{ title, description, images: [{ url: image }] }}
       />
+
       <Navbar />
+
       <Box
         sx={{
           position: "relative",

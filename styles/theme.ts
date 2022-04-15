@@ -37,6 +37,8 @@ export const defaultTheme = {
   typography: {
     fontFamily: [
       "Franklin Gothic",
+      "SF Pro Display",
+      "SF Pro",
       "Roboto",
       "-apple-system",
       "BlinkMacSystemFont",

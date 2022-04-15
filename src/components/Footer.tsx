@@ -26,7 +26,7 @@ const Footer: FC = () => {
         justifyContent="center"
         spacing={3}
       >
-        <NavDrawer/>
+        <NavDrawer />
         <Link
           href="https://twitter.com/TreasureNFTs"
           target="_blank"
@@ -43,7 +43,7 @@ const Footer: FC = () => {
         >
           <FaTwitter style={{ height: "32px", width: "32px" }} />
         </Link>
-{/*         <Link
+        {/*         <Link
           href="https://discord.gg/MxAu5GZCb2"
           target="_blank"
           sx={{

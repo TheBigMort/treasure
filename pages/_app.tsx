@@ -1,6 +1,6 @@
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import createEmotionCache from "@src/utils/createEmotionCache";
 import theme from "@styles/theme";
 import { Config, DAppProvider } from "@usedapp/core";
@@ -39,18 +39,14 @@ function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
     <>
-      
       <DAppProvider config={config}>
         <CacheProvider value={emotionCache}>
           <ThemeProvider theme={theme}>
-            <StyledEngineProvider injectFirst>
-              <CssBaseline />
-              <Component {...pageProps} />
-            </StyledEngineProvider>
+            <CssBaseline />
+            <Component {...pageProps} />
           </ThemeProvider>
         </CacheProvider>
       </DAppProvider>
-
     </>
   );
 }

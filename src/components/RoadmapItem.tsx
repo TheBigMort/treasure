@@ -1,14 +1,14 @@
+import { Icon, Stack, Typography } from "@mui/material";
 import { FC } from "react";
-import { Stack, Typography, Icon } from "@mui/material";
 import { HiOutlineChevronRight } from "react-icons/hi";
-import theme from "@styles/theme";
 
 type RoadmapItemType = {
   title: string;
   content?: string;
+  extras?: string[];
 };
 
-const RoadmapItem: FC<RoadmapItemType> = ({ title, content }) => {
+const RoadmapItem: FC<RoadmapItemType> = ({ title, content, extras }) => {
   return (
     <Stack
       sx={{
@@ -37,6 +37,18 @@ const RoadmapItem: FC<RoadmapItemType> = ({ title, content }) => {
         </Typography>
       </Stack>
       {content && <Typography>{content}</Typography>}
+
+      {extras &&
+        extras.map((elem) => (
+          <Stack
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+            mt="0.6rem"
+          >
+            <Typography>{elem}</Typography>
+          </Stack>
+        ))}
     </Stack>
   );
 };

@@ -24,10 +24,7 @@ export const franklinGothicHeavy: FontFace = {
   fontDisplay: "swap",
   src: `url('/fonts/Franklin_Gothic_Heavy_Regular.ttf') format('ttf');`,
 };
-export const full = {
-  height: "auto",
-  width: "auto"
-}
+
 
 // export const franklinGothicATFRegular: FontFace = {
 //   fontFamily: "Franklin Gothic ATF",
