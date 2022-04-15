@@ -1,6 +1,6 @@
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
+import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
 import createEmotionCache from "@src/utils/createEmotionCache";
 import theme from "@styles/theme";
 import { Config, DAppProvider } from "@usedapp/core";
@@ -43,8 +43,10 @@ function MyApp(props: MyAppProps) {
       <DAppProvider config={config}>
         <CacheProvider value={emotionCache}>
           <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <Component {...pageProps} />
+            <StyledEngineProvider injectFirst>
+              <CssBaseline />
+              <Component {...pageProps} />
+            </StyledEngineProvider>
           </ThemeProvider>
         </CacheProvider>
       </DAppProvider>

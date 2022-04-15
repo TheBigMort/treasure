@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-css-tags */
 import createEmotionServer from "@emotion/server/create-instance";
+import { StyledEngineProvider } from "@mui/material";
 import createEmotionCache from "@src/utils/createEmotionCache";
 import theme from "@styles/theme";
 import Document, { Head, Html, Main, NextScript } from "next/document";
@@ -8,6 +9,8 @@ import * as React from "react";
 export default class MyDocument extends Document {
   render() {
     return (
+      <StyledEngineProvider injectFirst>
+
       <Html lang="en">
         <Head>
           {/* PWA primary color */}
@@ -20,6 +23,8 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
+      </StyledEngineProvider>
+
     );
   }
 }
