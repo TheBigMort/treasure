@@ -196,9 +196,9 @@ const Navbar: FC = () => {
             <SvgIcon
               viewBox="0 0 100 100"
               fill="none"
-              width={"32px"}
-              height={"32px"}
-              sx={{ height: "32px", width: "32px" }}
+              width={"24px"}
+              height={"24px"}
+              sx={{ height: "24px", width: "24px" }}
             >
               <path
                 fill="#313131"
@@ -236,7 +236,7 @@ const Navbar: FC = () => {
         >
           <Button
             onClick={!active ? () => activateBrowserWallet() : undefined}
-            color="secondary"
+            color="primary"
             variant="contained"
             disabled={active}
           >
@@ -258,6 +258,7 @@ const Navbar: FC = () => {
           <Hamburger
             toggled={isNavDrawerOpen}
             toggle={setIsNavDrawerOpen}
+            color={theme.palette.primary.main}
             hideOutline
           />
         </Stack>
