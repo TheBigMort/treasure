@@ -8,7 +8,10 @@ const Masthead: React.FC = () => {
   const mdUp = useMatchesMediaQuery("up", "md");
 
   return (
-    <Parallax bgImage="/assets/bg-image2.jpg" strength={300}>
+    <Parallax
+      bgImage={mdUp ? "/assets/bg-image2.jpg" : "/assets/bg-image-narrow.jpg"}
+      strength={300}
+    >
       <Stack
         justifyContent={"center"}
         sx={{

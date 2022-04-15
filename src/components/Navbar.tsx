@@ -43,8 +43,8 @@ const Navbar: FC = () => {
           alignItems: "center",
         }}
       >
-        <Link href="/" style={{ textDecoration: "none" }} ml="2rem">
-          <Typography fontFamily="Aleo Bold" fontSize="3rem">
+        <Link href="/" style={{ textDecoration: "none" }} ml="0.4rem">
+          <Typography fontFamily="Aleo Bold" fontSize="2rem">
             Treasure.
           </Typography>
         </Link>
