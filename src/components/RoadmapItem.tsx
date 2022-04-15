@@ -41,6 +41,7 @@ const RoadmapItem: FC<RoadmapItemType> = ({ title, content, extras }) => {
       {extras &&
         extras.map((elem) => (
           <Stack
+            key={elem}
             direction="row"
             alignItems="center"
             justifyContent="center"
