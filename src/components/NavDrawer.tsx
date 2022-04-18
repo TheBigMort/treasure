@@ -2,7 +2,7 @@ import Link from "@components/Link";
 import { Button, Drawer, Stack, SvgIcon } from "@mui/material";
 import { navDrawerAtom } from "@src/store/jotai";
 import theme from "@styles/theme";
-import { transition } from "@styles/utils";
+import transition from "@styles/utils";
 import { useAtom } from "jotai";
 import React, { FC, useCallback } from "react";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
@@ -76,7 +76,7 @@ const NavDrawer: FC = () => {
             <FaTwitter style={{ height: "32px", width: "32px" }} />
           </Link>
           <Link
-            href=""
+            href="https://discord.gg/hHjpQUH6Dw"
             target="_blank"
             sx={{
               color: "#FFFFFF",

@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-etherscan';
 import '@nomiclabs/hardhat-ganache';
 import '@nomiclabs/hardhat-waffle';
@@ -10,6 +11,7 @@ import 'solidity-coverage';
 
 dotenv.config();
 const config = {
+    constructArgsPath: './constructArgs.ts',
     solidity: {
         version: '0.8.9',
         settings: {

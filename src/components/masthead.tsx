@@ -15,11 +15,11 @@ const Masthead: React.FC = () => {
       <Stack
         justifyContent={"center"}
         sx={{
-          height: "91.4vh",
+          height: "94vh",
           width: "100vw",
         }}
       >
-        <Stack textAlign="center">
+        <Stack textAlign="center" p='2.5rem'>
           <Typography
             fontSize={mdUp ? "3.25rem" : "2.5rem"}
             fontFamily="SF Pro"
@@ -57,7 +57,7 @@ const Masthead: React.FC = () => {
             position: "absolute",
             bottom: 0,
             width: "100%",
-            mb: "1.5rem",
+            mb: '3rem',
           }}
         >
           <Image

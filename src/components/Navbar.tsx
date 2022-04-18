@@ -5,11 +5,11 @@ import {
   Stack,
   SvgIcon,
   Toolbar,
-  Typography,
+  Typography
 } from "@mui/material";
 import { navDrawerAtom } from "@src/store/jotai";
 import theme from "@styles/theme";
-import { transition } from "@styles/utils";
+import transition from "@styles/utils";
 import { useEthers, useLookupAddress } from "@usedapp/core";
 import { Spin as Hamburger } from "hamburger-react";
 import { useAtom } from "jotai";
@@ -117,7 +117,7 @@ const Navbar: FC = () => {
             }}
           >
             <Typography fontFamily="Aleo Bold" fontSize="1.5rem">
-              Mint
+              Plunder (Mint)
             </Typography>
           </Link>
           <Link
@@ -156,7 +156,7 @@ const Navbar: FC = () => {
             <FaTwitter style={{ height: "24px", width: "24px" }} />
           </Link>
           <Link
-            href=""
+            href="https://discord.gg/hHjpQUH6Dw"
             target="_blank"
             sx={{
               color: theme.palette.primary.main,

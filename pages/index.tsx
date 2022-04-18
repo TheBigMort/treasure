@@ -33,11 +33,10 @@ export default function Home() {
         >
           <Mint />
         </Stack>
+        <FAQ />
+
       </Container>
 
-      <Container>
-        <FAQ />
-      </Container>
     </Layout>
   );
 }

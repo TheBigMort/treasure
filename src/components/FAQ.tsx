@@ -3,7 +3,7 @@ import { Stack } from "@mui/material/";
 import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import MuiAccordionSummary, {
-  AccordionSummaryProps
+  AccordionSummaryProps,
 } from "@mui/material/AccordionSummary";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
@@ -62,8 +62,8 @@ const faqData = [
   },
   {
     q: "test 2",
-    a: "more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff "
-  }
+    a: "more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff ",
+  },
 ];
 
 const FAQ: FC = () => {

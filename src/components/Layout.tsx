@@ -4,7 +4,7 @@ import NavDrawer from "@components/NavDrawer";
 import { Box, Slide } from "@mui/material/";
 import MuiAlert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
-import { snackbarAtom } from "@src/store/jotai";
+import snackbarAtom from "@src/store/jotai";
 import { useAtom } from "jotai";
 import { NextSeo } from "next-seo";
 import { FC, forwardRef, useCallback } from "react";

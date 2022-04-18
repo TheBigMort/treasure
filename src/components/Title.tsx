@@ -6,10 +6,10 @@ const Title: FC = ({ children }) => (
     variant="h3"
     textAlign="center"
     // fontFamily={["Franklin Gothic", "Roboto"].join()}
-    fontFamily="Mazzard Light"
+    fontFamily="Aleo Light"
     sx={{
       fontWeight: "900",
-      mb: "3rem",
+      mb: "1.5rem",
     }}
     color="secondary"
   >

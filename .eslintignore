@@ -5,3 +5,5 @@ pages
 public
 styles
 craco.config.js
+scripts
+test

@@ -1,6 +1,6 @@
 import { Link, Stack, SvgIcon } from "@mui/material";
 import theme from "@styles/theme";
-import { transition } from "@styles/utils";
+import transition from "@styles/utils";
 import { FC } from "react";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
 import NavDrawer from "./NavDrawer";
@@ -44,7 +44,7 @@ const Footer: FC = () => {
           <FaTwitter style={{ height: "32px", width: "32px" }} />
         </Link>
         <Link
-          href=""
+          href="https://discord.gg/hHjpQUH6Dw"
           target="_blank"
           sx={{
             color: "#FFFFFF",

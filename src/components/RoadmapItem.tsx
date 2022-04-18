@@ -30,7 +30,6 @@ const RoadmapItem: FC<RoadmapItemType> = ({ title, content, extras }) => {
           component={HiOutlineChevronRight}
         />
         <Typography
-          fontWeight="bold"
           fontSize="1.6rem"
           color="secondary"
           sx={{ textTransform: "uppercase" }}
