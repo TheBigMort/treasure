@@ -1,9 +1,3 @@
 next.config.js
-website_archive
-src
-pages
 public
-styles
 craco.config.js
-scripts
-test

@@ -35,3 +35,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+artifacts
+cache
+metadata/data
+metadata/out
+metadata/in
+.vscode
