@@ -1,10 +1,9 @@
-import Mint from '@components/Mint';
 import Roadmap from '@components/Roadmap';
-import { Stack } from '@mui/material';
 import Container from '@src/components/Container';
 import FAQ from '@src/components/FAQ';
 import Layout from '@src/components/Layout';
 import Masthead from '@src/components/masthead';
+import Timer from '@src/components/timer';
 import Head from 'next/head';
 import React from 'react';
 
@@ -17,19 +16,9 @@ export default function Home() {
             </Head>
             <Masthead />
             <Container>
-                <Stack pt="3rem">
-                    <Roadmap />
-                </Stack>
+                <Roadmap />
+                <Timer />
 
-                <Stack
-                    direction="row"
-                    alignItems="center"
-                    justifyContent="center"
-                    pt="1.5rem"
-                    pb="3rem"
-                >
-                    <Mint />
-                </Stack>
                 <FAQ />
             </Container>
         </Layout>

@@ -10,6 +10,7 @@ const Title: FC = ({ children }) => (
         sx={{
             fontWeight: '900',
             mb: '1.5rem',
+            mt: '1.5rem',
         }}
         color="secondary"
     >

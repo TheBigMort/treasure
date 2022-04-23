@@ -30,6 +30,6 @@
     "scripts",
     "test"
   ],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "metadata"],
   "files": ["hardhat.config.ts"]
 }

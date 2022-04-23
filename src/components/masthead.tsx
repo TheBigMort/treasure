@@ -29,10 +29,10 @@ const Masthead: React.FC = () => {
                             Ethereum blockchain
                         </Typography>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
-                            1B + Possible chest combinations
+                            1 Billion+ Possible chest combinations
                         </Typography>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
-                            250,000+ Traits
+                            1 Million+ Traits
                         </Typography>
                     </Stack>
                 </Stack>

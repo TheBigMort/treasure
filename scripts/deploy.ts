@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { execSync } from 'child_process';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import * as hre from 'hardhat';
@@ -15,7 +16,7 @@ async function main() {
         await con.deployTransaction.wait(5);
     }
 
-    console.log('LBRLedger deployed to:', con.address);
+    console.log('Treasure deployed to:', con.address);
     console.log('Verifying...');
     const verCommand: string = `npx hardhat verify --network ${hre.network.name} ${
         con.address

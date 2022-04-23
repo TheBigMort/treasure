@@ -1,11 +1,12 @@
 const conArgs = {
     __uri: 'hello/',
     payees: [
-        `0xf89eF996c90D1fD93b93F0fC79c3afd9B2e531F9`,
-        `0x599ED2119EFC6b97d23729E0f2aF5Bf71c1e1249`,
-        `0xE664A24b276C7957Af9bf9ebC96A880fFe149d2A`,
+        `0xEA4dC918525505d2A026Fd356cf2B723a0505Be8`,
+        `0x4427fCC55d41f5eD6989Fc7c6AC1542653192b05`,
+        `0x7db44F46Ee7385Ad0FD23Bd6323f8Bd80cF7fE92`,
+        `0x4f65cDFfE6c48ad287f005AD14E78ff6433c8d67`,
     ],
-    shares: [34, 33, 33],
+    shares: [33, 33, 20, 14],
     _name: 'Treasure (for Warriors)',
     _symbol: 'T4W',
 };

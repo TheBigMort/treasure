@@ -54,12 +54,12 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const faqData = [
     {
-        q: 'test1',
-        a: 'stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff ',
+        q: 'How many treasures exist and what is in each treasure?',
+        a: 'Each treasure has several items that pertain to a category: Head, Torso, Bottoms, Footwear, Weapon, Shield, Amulet, and Miscellaneous. There are only 10,000 but as the project progresses there might be expansions with completely new items, but there will be benefits only available to genesis treasure holders.',
     },
     {
-        q: 'test 2',
-        a: 'more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff more stuff ',
+        q: 'How do I mint?',
+        a: 'Connect your Metamask wallet on our website and choose the amount of treasures you wish to mint. You can view your treasures in Opensea. The official Opensea link will be provided closer to mint.',
     },
 ];
 
