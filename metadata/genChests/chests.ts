@@ -4,7 +4,6 @@ import Chance from 'chance';
 import { List, Map as IMap } from 'immutable';
 import { normalDist } from '../utils/chances';
 import { categories, rarityMods } from '../utils/constants';
-import Category from './category';
 import { Cat } from './types';
 
 const chance = new Chance();
@@ -20,17 +19,12 @@ export default class Chests {
 
     catTracker: IMap<Cat, number> = IMap();
 
-    modClasses: IMap<Cat, Category> = IMap();
 
     constructor(collSize: number) {
         this.numItemsWeights = normalDist();
         this.seeds = this.getSeeds();
         this.numChests = collSize;
-        categories.forEach((category: Cat) => {
-            this.modClasses = this.modClasses.set(category, new Category(category));
-        });
     }
-
     getSeeds = (): IMap<number, number> => {
         let temp: number = 0;
         return this.numItemsWeights
@@ -70,10 +64,7 @@ export default class Chests {
         }
         return cats;
     };
-    initializeClasses = async () => {
-        await Promise.all(this.modClasses.valueSeq().map((catClass) => catClass.))
 
-    }
     generateChests = async () => {
         for (let i = 0; i < this.numChests; i += 1) {
             const numItems = this.getNumItems();

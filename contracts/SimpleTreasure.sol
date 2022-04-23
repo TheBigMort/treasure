@@ -9,18 +9,18 @@ import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
-import "../interfaces/ITreasure.sol";
+import "../interfaces/ISimpleTreasure.sol";
 
 /**
  * @title Treasure (for Warriors) minting contract
  * @author Maxwell J. Rux
  */
-contract Treasure is
+contract SimpleTreasure is
     ERC721Enum,
     Ownable,
     ReentrancyGuard,
     PaymentSplitter,
-    ITreasure
+    ISimpleTreasure
 {
     using Counters for Counters.Counter;
     using Strings for uint256;

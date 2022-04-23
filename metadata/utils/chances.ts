@@ -29,7 +29,7 @@ function normalDist(): IMap<number, number> {
     }
     const final = totals.map((x) => (x / numRuns) ** (1 / 2) * 100).sortBy((x) => x);
     const total = final.reduce((red: number, val: number) => red + val);
+
     return final.map((x) => x / total);
 }
-
 export { normalDist };

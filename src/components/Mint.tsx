@@ -1,4 +1,6 @@
-import Progress from '@components/Progress';
+/* eslint-disable prettier/prettier */
+export { };
+/* import Progress from '@components/Progress';
 import Title from '@components/Title';
 import { JsonRpcSigner } from '@ethersproject/providers';
 import LoadingButton from '@mui/lab/LoadingButton';
@@ -166,3 +168,4 @@ const Mint: FC = () => {
 };
 
 export default Mint;
+ */

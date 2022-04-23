@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { Stack, Typography } from '@mui/material';
 import { FC, useEffect, useState } from 'react';
-import Mint from './Mint';
 import Title from './Title';
 
 type TimePeriod = 'Days' | 'Hours' | 'Minutes' | 'Seconds';
@@ -28,7 +27,7 @@ const Timer: FC = () => {
     const [hours, setHours] = useState(0);
     const [minutes, setMins] = useState(0);
     const [seconds, setSecs] = useState(0);
-    const [difference, setDifference] = useState(1);
+    // const [difference, setDifference] = useState(1);
 
     useEffect(() => {
         const target = new Date(process.env.NEXT_PUBLIC_MINTDATE!);
@@ -36,7 +35,7 @@ const Timer: FC = () => {
         const interval = setInterval(() => {
             const now = new Date();
             const diff = target.getTime() - now.getTime();
-            setDifference(diff);
+            // setDifference(diff);
 
             const d = Math.floor(diff / (1000 * 60 * 60 * 24));
             setDays(d);
@@ -52,7 +51,21 @@ const Timer: FC = () => {
         }, 1000);
         return () => clearInterval(interval);
     }, []);
-    return difference <= 0 ? (
+    return (
+        <Stack direction="column" alignItems="center">
+            <Title>Countdown To Mint</Title>
+            <Stack direction="row" spacing={3}>
+                {[
+                    { timePeriod: 'Days', value: days },
+                    { timePeriod: 'Hours', value: hours },
+                    { timePeriod: 'Minutes', value: minutes },
+                    { timePeriod: 'Seconds', value: seconds },
+                ].map((val: any) => (
+                    <TimerSegment timePeriod={val.timePeriod} value={val.value} />
+                ))}
+            </Stack>
+        </Stack>
+    ); /* difference <= 0 ? (
         <Stack direction="row" alignItems="center" justifyContent="center" pt="1.5rem" pb="3rem">
             <Mint />
         </Stack>
@@ -70,6 +83,6 @@ const Timer: FC = () => {
                 ))}
             </Stack>
         </Stack>
-    );
+    ); */
 };
 export default Timer;
