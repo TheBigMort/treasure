@@ -8,7 +8,6 @@ import { parseEther } from "ethers/lib/utils";
 import fs from "fs";
 import * as hre from "hardhat";
 import { conConfig } from "../contract.config";
-import urls from "./utils/urls";
 
 const reportDir: string = "./test/reports";
 const ETH2USD: number = 3040;
@@ -16,7 +15,7 @@ const ETH2GBP: number = 2327;
 const price: number = 0.08;
 
 const getRandInt = (max: number) => Math.floor(Math.random() * max);
-const getRandURL = () => `${urls[getRandInt(urls.length)]}/token/`;
+// const getRandURL = () => `${urls[getRandInt(urls.length)]}/token/`;
 const buildMint = (
   con: Contract,
   signer: SignerWithAddress,
@@ -149,13 +148,13 @@ describe("Gas Tests", () => {
       }
       await Promise.all(mints);
     });
-    it("setBaseURI", async () => {
+/*     it("setBaseURI", async () => {
       const txs: Promise<TransactionResponse>[] = [];
       for (let i = 0; i < 10; i += 1) {
         txs.push(lbr.connect(signers[0]).setBaseURI(getRandURL()));
       }
       gasMap.set("setBaseURI", average(<number[]>await getGas(txs)));
-    });
+    }); */
     it("flipSaleState", async () => {
       const txs: Promise<TransactionResponse>[] = [];
       for (let i = 0; i < 10; i += 1) {
