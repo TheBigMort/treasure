@@ -38,7 +38,5 @@ yarn-error.log*
 
 artifacts
 cache
-metadata/data
-metadata/out
-metadata/in
+metadata
 .vscode

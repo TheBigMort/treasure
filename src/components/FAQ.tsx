@@ -61,6 +61,10 @@ const faqData = [
         q: 'How do I mint?',
         a: 'Connect your Metamask wallet on our website and choose the amount of treasures you wish to mint. You can view your treasures in Opensea. The official Opensea link will be provided closer to mint.',
     },
+    {
+        q: `What is treasure?`,
+        a: `Treasure is randomized battle gear generated and stored on chain. Each treasure chest contains a variety of gear that warriors will use in battle. Ranging from armour, to weapons and survival gear. Feel free to use your treasure in any way you want.`,
+    },
 ];
 
 const FAQ: FC = () => {

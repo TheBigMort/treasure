@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
-export { };
-/* import Progress from '@components/Progress';
+import Progress from '@components/Progress';
 import Title from '@components/Title';
 import { JsonRpcSigner } from '@ethersproject/providers';
 import LoadingButton from '@mui/lab/LoadingButton';
@@ -8,12 +7,14 @@ import { Alert, IconButton, Stack, TextField, Typography } from '@mui/material';
 import snackbarAtom from '@src/store/jotai';
 import track from '@src/utils/track';
 import { useContractCall, useEthers } from '@usedapp/core';
-import { chainIndex, conParams, contractAddress } from 'contract.config';
+import { conConfig } from 'contract.config';
 import { ethers } from 'ethers';
 import { useAtom } from 'jotai';
 import { FC, useCallback, useState } from 'react';
 import { RiArrowLeftSFill, RiArrowRightSFill } from 'react-icons/ri';
 import Treasure from '../../artifacts/contracts/Treasure.sol/Treasure.json';
+
+export { };
 
 const Mint: FC = () => {
     const [mintAmount, setMintAmount] = useState(0);
@@ -25,7 +26,7 @@ const Mint: FC = () => {
     const [minted] =
         useContractCall({
             abi: new ethers.utils.Interface(Treasure.abi),
-            address: contractAddress,
+            address: conConfig.contractAddress,
             method: 'totalSupply',
             args: [],
         }) ?? [];
@@ -34,14 +35,14 @@ const Mint: FC = () => {
         setIsLoading(true);
         const signer = provider?.getSigner();
         const contract = new ethers.Contract(
-            contractAddress as string,
+            conConfig.contractAddress as string,
             Treasure.abi,
             signer as JsonRpcSigner
         );
 
         try {
             const transaction = await contract.plunder(mintAmount, {
-                value: ethers.utils.parseEther(`${parseFloat(conParams.price) * mintAmount}`),
+                value: ethers.utils.parseEther(`${parseFloat(conConfig.conParams.price) * mintAmount}`),
             });
             await transaction.wait();
 
@@ -75,7 +76,7 @@ const Mint: FC = () => {
     }, []);
     const increaseMintAmount = useCallback(() => {
         track('mint_amount:increased');
-        setMintAmount((amount) => (amount < conParams.MAX_MULTIMINT ? amount + 1 : amount));
+        setMintAmount((amount) => (amount < conConfig.conParams.MAX_MULTIMINT ? amount + 1 : amount));
     }, []);
     return (
         <Stack id="mint" alignItems="center">
@@ -110,16 +111,16 @@ const Mint: FC = () => {
                         value={mintAmount}
                         onChange={(e) =>
                             setMintAmount(
-                                Number(e.target.value) <= conParams.MAX_MULTIMINT
+                                Number(e.target.value) <= conConfig.conParams.MAX_MULTIMINT
                                     ? Number(e.target.value)
-                                    : conParams.MAX_MULTIMINT
+                                    : conConfig.conParams.MAX_MULTIMINT
                             )
                         }
                         color="secondary"
                         type="number"
                         placeholder="amount"
                         InputProps={{
-                            inputProps: { min: 0, max: conParams.MAX_MULTIMINT },
+                            inputProps: { min: 0, max: conConfig.conParams.MAX_MULTIMINT },
                         }}
                     />
                     <IconButton onClick={increaseMintAmount} color="secondary" size="large">
@@ -131,7 +132,7 @@ const Mint: FC = () => {
                         maxWidth: '300px',
                     }}
                 >
-                    {active && chainId !== chainIndex && (
+                    {active && chainId !== conConfig.chainIndex && (
                         <Alert severity="warning">Please connect to Ethereum Mainnet</Alert>
                     )}
                 </Stack>
@@ -146,7 +147,7 @@ const Mint: FC = () => {
                 <LoadingButton
                     loading={isLoading}
                     disabled={
-                        mintAmount === 0 || chainId !== chainIndex || minted >= conParams.MAX_SUPPLY
+                        mintAmount === 0 || chainId !== conConfig.chainIndex || minted >= conConfig.conParams.MAX_SUPPLY
                     }
                     // disabled={mintAmount === 0 || chainId !== 1 || minted === 520}
                     variant="contained"
@@ -159,13 +160,13 @@ const Mint: FC = () => {
                     }}
                     //
                 >
-                    {minted >= conParams.MAX_SUPPLY ? 'Sold out!' : 'Plunder (Mint)'}
+                    {minted >= conConfig.conParams.MAX_SUPPLY ? 'Sold out!' : 'Plunder (Mint)'}
                 </LoadingButton>
             </Stack>
-            <Progress progress={chainId === chainIndex ? minted : 0} />
+            <Progress progress={chainId === conConfig.chainIndex ? minted : 0} />
         </Stack>
     );
 };
 
 export default Mint;
- */
+

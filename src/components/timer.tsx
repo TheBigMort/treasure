@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { Stack, Typography } from '@mui/material';
 import { FC, useEffect, useState } from 'react';
+import Mint from './Mint';
 import Title from './Title';
 
 type TimePeriod = 'Days' | 'Hours' | 'Minutes' | 'Seconds';
@@ -27,16 +28,16 @@ const Timer: FC = () => {
     const [hours, setHours] = useState(0);
     const [minutes, setMins] = useState(0);
     const [seconds, setSecs] = useState(0);
-    // const [difference, setDifference] = useState(1);
-
+    const [read2mint, setReady2Mint] = useState(false);
     useEffect(() => {
         const target = new Date(process.env.NEXT_PUBLIC_MINTDATE!);
 
         const interval = setInterval(() => {
             const now = new Date();
             const diff = target.getTime() - now.getTime();
-            // setDifference(diff);
-
+            if (diff < 0 && !read2mint) {
+                setReady2Mint(true);
+            }
             const d = Math.floor(diff / (1000 * 60 * 60 * 24));
             setDays(d);
 
@@ -48,10 +49,10 @@ const Timer: FC = () => {
 
             const s = Math.floor((diff % (1000 * 60)) / 1000);
             setSecs(s);
-        }, 1000);
+        }, 10);
         return () => clearInterval(interval);
     }, []);
-    return (
+    return !read2mint ? (
         <Stack direction="column" alignItems="center">
             <Title>Countdown To Mint</Title>
             <Stack direction="row" spacing={3}>
@@ -61,9 +62,17 @@ const Timer: FC = () => {
                     { timePeriod: 'Minutes', value: minutes },
                     { timePeriod: 'Seconds', value: seconds },
                 ].map((val: any) => (
-                    <TimerSegment timePeriod={val.timePeriod} value={val.value} />
+                    <TimerSegment
+                        key={val.timePeriod}
+                        timePeriod={val.timePeriod}
+                        value={val.value}
+                    />
                 ))}
             </Stack>
+        </Stack>
+    ) : (
+        <Stack direction="row" alignItems="center" justifyContent="center" pt="1.5rem" pb="3rem">
+            <Mint />
         </Stack>
     ); /* difference <= 0 ? (
         <Stack direction="row" alignItems="center" justifyContent="center" pt="1.5rem" pb="3rem">

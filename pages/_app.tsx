@@ -24,8 +24,8 @@ function MyApp(props: MyAppProps) {
                     type: 'website',
                     locale: 'en_EN',
                     url: 'https://treasurenfts.io',
-                    site_name: 'Treasure',
-                    title: 'Treasure',
+                    site_name: 'AdvancedTreasure',
+                    title: 'AdvancedTreasure',
                     images: [{ url: 'https://treasurenfts.io/assets/treasure-logo.jpeg' }],
                 }}
             />

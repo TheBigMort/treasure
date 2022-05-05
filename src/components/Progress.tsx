@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import LinearProgress, { LinearProgressProps } from '@mui/material/LinearProgress';
-import { conParams } from 'contract.config';
+import { conConfig } from 'contract.config';
 import React, { FC } from 'react';
 
 function LinearProgressWithLabel(props: LinearProgressProps & { value: number }) {
@@ -10,7 +10,7 @@ function LinearProgressWithLabel(props: LinearProgressProps & { value: number })
                 <LinearProgress
                     variant="determinate"
                     color="secondary"
-                    value={Math.round(props.value) / (conParams.MAX_SUPPLY / 100)}
+                    value={Math.round(props.value) / (conConfig.conParams.MAX_SUPPLY / 100)}
                 />
             </Box>
             <Box sx={{ minWidth: 100 }}>
@@ -22,7 +22,7 @@ function LinearProgressWithLabel(props: LinearProgressProps & { value: number })
                 >
                     {props.value === 0
                         ? 'connect to mainnet'
-                        : `${Math.round(props.value)} / ${conParams.MAX_SUPPLY}`}
+                        : `${Math.round(props.value)} / ${conConfig.conParams.MAX_SUPPLY}`}
                 </Typography>
             </Box>
         </Box>

@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.9;
 
-interface IAdvancedTreasure {
+interface ITreasure {
     function plunder(uint256 numMints) external payable;
 
     function status() external view returns (bool);
@@ -10,8 +10,6 @@ interface IAdvancedTreasure {
     function contractURI() external view returns (string memory);
 
     function reserved() external view returns (uint256);
-
-    function baseURI() external view returns (string memory);
 
     function price() external pure returns (uint256);
 }

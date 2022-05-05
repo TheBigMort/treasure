@@ -13,7 +13,7 @@ dotenv.config();
 const config = {
     constructArgsPath: './constructArgs.ts',
     solidity: {
-        version: '0.8.9',
+        version: '0.8.13',
         settings: {
             optimizer: {
                 enabled: true,
@@ -31,7 +31,7 @@ const config = {
         artifacts: './artifacts',
     },
     mocha: {
-        timeout: 20000,
+        timeout: 500000,
     },
     networks: {
         hardhat: {},

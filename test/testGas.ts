@@ -1,13 +1,13 @@
 import {
-    TransactionReceipt,
-    TransactionResponse
+  TransactionReceipt,
+  TransactionResponse
 } from "@ethersproject/abstract-provider";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { Contract, ContractFactory } from "ethers";
 import { parseEther } from "ethers/lib/utils";
 import fs from "fs";
 import * as hre from "hardhat";
-import { conArgs, conParams } from "../contract.config";
+import { conConfig } from "../contract.config";
 import urls from "./utils/urls";
 
 const reportDir: string = "./test/reports";
@@ -75,13 +75,7 @@ describe("Gas Tests", () => {
         "Treasure",
         signers[0]
       );
-      lbr = await Treasure.deploy(
-        conArgs.__uri,
-        [signers[4].address, signers[5].address, signers[6].address],
-        conArgs.shares,
-        conArgs._name,
-        conArgs._symbol
-      );
+      lbr = await Treasure.deploy(...conConfig.conArgs);
       gasMap.set("deploy", <number>await getGas(lbr.deployTransaction));
       await lbr.flipSaleState();
     } catch (e) {
@@ -96,7 +90,7 @@ describe("Gas Tests", () => {
       }
       await Promise.all(firstMints);
     });
-    for (let i = 1; i <= 25; i += 1) {
+    for (let i = 1; i <= conConfig.conParams.MAX_MULTIMINT; i += 5) {
       const title: string = `mint(${i})`;
       it(title, async () => {
         const avgs: number[] = [];
@@ -111,20 +105,19 @@ describe("Gas Tests", () => {
         gasMap.set(title, average(avgs));
       });
     }
-    for (let i = 1; i <= 10; i += 1) {
-      const numMints = i * 10;
-      const title: string = `mintReserveToAddress(${numMints})`;
+    for (let i = 10; i <= conConfig.conParams.MAX_RESERVE; i += 10) {
+      const title: string = `mintReserveToAddress(${i})`;
       it(title, async () => {
         const txs: Promise<TransactionResponse>[] = [];
         for (
           let k = 0;
-          k < Math.floor(conParams.MAX_RESERVE / numMints);
+          k < Math.floor(conConfig.conParams.MAX_RESERVE / i);
           k += 1
         ) {
           txs.push(
             lbr
               .connect(signers[0])
-              .mintReserveToAddress(numMints, signers[5].address)
+              .mintReserveToAddress(i, signers[5].address)
           );
         }
         gasMap.set(title, average(<number[]>await getGas(txs)));
@@ -137,7 +130,7 @@ describe("Gas Tests", () => {
         const txs: Promise<TransactionResponse>[] = [];
         for (
           let k = 0;
-          k < Math.floor(conParams.MAX_RESERVE / numMints);
+          k < Math.floor(conConfig.conParams.MAX_RESERVE / numMints);
           k += 1
         ) {
           txs.push(lbr.connect(signers[0]).mintReserve(numMints));
@@ -186,6 +179,7 @@ describe("Gas Tests", () => {
         signers[4],
         signers[5],
         signers[6],
+        signers[7]
       ].map((s: SignerWithAddress) => lbr.connect(s).release(s.address));
       gasMap.set("release", average(<number[]>await getGas(txs)));
     });
