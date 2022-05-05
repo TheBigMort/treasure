@@ -36,7 +36,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-artifacts
 cache
 metadata
 .vscode
