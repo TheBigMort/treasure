@@ -1,0 +1,1557 @@
+{
+   "Blowpipe": {
+      "Dagger": "Blowpipe",
+      "Darts": "Blowpipe"
+   },
+   "Staff": {
+      "Sword": "Staff"
+   },
+   "Spiteful": {
+      "Tormented": "Tormented"
+   },
+   "Robe": {
+      "Vest": "Vest",
+      "Chainbody": "Robe",
+      "Chainmail": "Robe"
+   },
+   "of Battle": {
+      "of Darkness": "of Darkness",
+      "of Doom": "of Doom",
+      "of Fire": "of Battle",
+      "of Death": "of Death",
+      "of Deflection": "of Battle",
+      "of Destruction": "of Battle",
+      "of Power": "of Power",
+      "of the Angels": "of the Angels"
+   },
+   "Heel-Stoppers": {
+      "Water-Walkers": "Water-Walkers",
+      "Rock-Climbers": "Heel-Stoppers",
+      "Side-Steppers": "Side-Steppers",
+      "Runners": "Heel-Stoppers",
+      "Shoes": "Heel-Stoppers"
+   },
+   "Boots": {
+      "Rock-Climbers": "Boots",
+      "Water-Walkers": "Water-Walkers",
+      "Runners": "Boots",
+      "Side-Steppers": "Side-Steppers",
+      "Shoes": "Shoes",
+      "Heel-Stoppers": "Heel-Stoppers",
+      "Sandals": "Sandals"
+   },
+   "Confounding": {
+      "Dirty": "Dirty",
+      "Dull": "Dull"
+   },
+   "of Protection": {
+      "of Reflection": "of Reflection"
+   },
+   "Gi": {
+      "Platelegs": "Gi",
+      "Jeans": "Gi",
+      "Stockings": "Gi",
+      "Armour": "Armour",
+      "Chainskirt": "Chainskirt",
+      "Trousers": "Gi",
+      "Pants": "Gi"
+   },
+   "of Accuracy": {
+      "of Agility": "of Accuracy",
+      "of Battle": "of Battle",
+      "of Anguish": "of Anguish"
+   },
+   "Boomerang": {
+      "Blowpipe": "Boomerang",
+      "Staff": "Staff",
+      "Knuckledusters": "Boomerang",
+      "Hammer": "Hammer",
+      "Chainsaw": "Chainsaw",
+      "Crossbow": "Boomerang",
+      "Firecracker": "Firecracker",
+      "Darts": "Darts",
+      "Mace": "Mace",
+      "Katana": "Katana",
+      "Blade": "Blade",
+      "Battle-axe": "Boomerang",
+      "Spear": "Boomerang",
+      "Lance": "Boomerang",
+      "Cannon": "Cannon"
+   },
+   "of Deflection": {
+      "of Destruction": "of Destruction",
+      "of Fire": "of Fire",
+      "of Fury": "of Fury",
+      "of Power": "of Power",
+      "of the Angels": "of the Angels",
+      "of the Brave": "of the Brave",
+      "of the Dead": "of the Dead"
+   },
+   "Rich Man's": {
+      "Warrior's": "Rich Man's",
+      "Wizzard's": "Wizzard's"
+   },
+   "Runners": {
+      "Shoes": "Runners",
+      "Side-Steppers": "Side-Steppers"
+   },
+   "Chainbody": {
+      "Platebody": "Chainbody",
+      "Vest": "Chainbody",
+      "Robe": "Chainbody",
+      "Ringmail": "Chainbody"
+   },
+   "Aggressive": {
+      "Agile": "Agile",
+      "Astonishing": "Astonishing",
+      "Basic": "Aggressive",
+      "Confounding": "Confounding"
+   },
+   "Azamat's": {
+      "Bandit's": "Azamat's",
+      "Richman's": "Azamat's"
+   },
+   "Fearsome": {
+      "Possessed": "Fearsome",
+      "Invisible": "Invisible",
+      "Flaming": "Fearsome",
+      "Superior": "Superior",
+      "Steady": "Fearsome",
+      "Sharpened": "Sharpened",
+      "Vicious": "Vicious",
+      "Thicc": "Thicc",
+      "Trusted": "Fearsome",
+      "Hell-raising": "Hell-raising"
+   },
+   "Sandals": {
+      "Slippers": "Slippers",
+      "Sneakers": "Sneakers",
+      "Soles": "Soles",
+      "Heel-Stoppers": "Heel-Stoppers",
+      "Rock-Climbers": "Sandals",
+      "Water-Walkers": "Sandals",
+      "Side-Steppers": "Side-Steppers",
+      "Shoes": "Shoes"
+   },
+   "Prisoner's": {
+      "Thief's": "Thief's"
+   },
+   "Stone": {
+      "Studded-Leather": "Studded-Leather",
+      "Wood": "Stone"
+   },
+   "Fearless-Fighter's": {
+      "Hero's": "Hero's",
+      "Lumberjack's": "Lumberjack's",
+      "Prisoner's": "Fearless-Fighter's",
+      "Thief's": "Fearless-Fighter's"
+   },
+   "Gasmask": {
+      "Mask": "Gasmask",
+      "Helmet": "Gasmask",
+      "Crown": "Crown",
+      "Hat": "Gasmask",
+      "Hood": "Gasmask",
+      "Turban": "Gasmask"
+   },
+   "Demonic": {
+      "Poisonous": "Demonic",
+      "Leaf-Covered": "Demonic",
+      "Dusty": "Demonic",
+      "Heavenly": "Heavenly",
+      "Eagle-Eye": "Demonic",
+      "Strengthened": "Demonic",
+      "Enormous": "Enormous",
+      "Invisible": "Demonic",
+      "Dull": "Demonic",
+      "Dirty": "Demonic",
+      "Thicc": "Thicc",
+      "Jagged": "Demonic",
+      "Lethal": "Lethal",
+      "Skeletal": "Skeletal",
+      "Hell-raising": "Demonic",
+      "Leaf-Bladed": "Leaf-Bladed"
+   },
+   "Pirate's": {
+      "Warrior's": "Warrior's",
+      "Wizzard's": "Wizzard's",
+      "Rich Man's": "Rich Man's"
+   },
+   "Astonishing": {
+      "Confounding": "Astonishing",
+      "Fearsome": "Fearsome",
+      "Demonic": "Astonishing",
+      "Poisonous": "Astonishing",
+      "Serpentine": "Serpentine",
+      "Furious": "Furious",
+      "Leaf-Covered": "Astonishing",
+      "Dusty": "Astonishing",
+      "Levitating": "Levitating",
+      "Eagle-Eye": "Astonishing",
+      "Strengthened": "Astonishing",
+      "Samauri": "Samauri",
+      "Solid": "Solid",
+      "Enormous": "Astonishing",
+      "Corrupted": "Corrupted",
+      "Corrupt": "Corrupt",
+      "Basic": "Astonishing",
+      "Barbed": "Barbed",
+      "Pointed": "Pointed",
+      "Flaming": "Flaming",
+      "Dull": "Astonishing",
+      "Gracious": "Astonishing",
+      "Dirty": "Astonishing",
+      "Flawless": "Flawless",
+      "Broken": "Broken",
+      "Jagged": "Astonishing",
+      "Enchanted": "Enchanted",
+      "Lethal": "Astonishing",
+      "Energy-Infused": "Energy-Infused",
+      "Skeletal": "Astonishing",
+      "Exceptional": "Exceptional",
+      "Blessed": "Blessed",
+      "Leaf-Bladed": "Astonishing",
+      "Elegant": "Elegant"
+   },
+   "Knife": {
+      "Shank": "Knife",
+      "Ninjastars": "Ninjastars",
+      "Katana": "Katana",
+      "Hatchet": "Knife"
+   },
+   "Poisonous": {
+      "Serpentine": "Poisonous",
+      "Possessed": "Possessed",
+      "Strengthened": "Poisonous",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Skeletal": "Poisonous",
+      "Shiny": "Shiny"
+   },
+   "Serpentine": {
+      "Shiny": "Shiny",
+      "Skeletal": "Serpentine",
+      "Venom-Tipped": "Serpentine",
+      "Waterproof": "Waterproof"
+   },
+   "Possessed": {
+      "Shiny": "Shiny",
+      "Soul-Snatching": "Possessed",
+      "Thicc": "Thicc",
+      "Steady": "Steady",
+      "Trusted": "Possessed"
+   },
+   "Hero's": {
+      "Knight's": "Hero's",
+      "Mage's": "Hero's",
+      "Richman's": "Richman's",
+      "Warrior's": "Hero's"
+   },
+   "Squareshield": {
+      "Bucklershield": "Squareshield",
+      "Vikingshield": "Vikingshield",
+      "Protector": "Squareshield"
+   },
+   "Water-Walkers": {
+      "Side-Steppers": "Side-Steppers"
+   },
+   "Bucklershield": {
+      "Deflector": "Deflector",
+      "Protector": "Protector",
+      "Vikingshield": "Vikingshield"
+   },
+   "Furious": {
+      "Healing": "Healing",
+      "Marching": "Furious",
+      "Levitating": "Furious",
+      "Serpentine": "Serpentine",
+      "Venom-Tipped": "Venom-Tipped",
+      "Waterproof": "Waterproof"
+   },
+   "Dusty": {
+      "Gracious": "Gracious",
+      "Jagged": "Jagged",
+      "Leaf-Bladed": "Leaf-Bladed",
+      "Leaf-Covered": "Leaf-Covered",
+      "Eagle-Eye": "Eagle-Eye",
+      "Poisonous": "Poisonous"
+   },
+   "Levitating": {
+      "Spiteful": "Spiteful",
+      "Venom-Tipped": "Venom-Tipped",
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Monstrous": "Monstrous",
+      "Samauri": "Samauri",
+      "Tormented": "Tormented",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Skeletal": "Skeletal",
+      "Mysterious": "Mysterious",
+      "Shiny": "Shiny"
+   },
+   "of Glory": {
+      "of the Fearless": "of the Fearless",
+      "of Protection": "of Glory",
+      "of the Victorious": "of the Victorious",
+      "of Security": "of Glory",
+      "of Mighty": "of Mighty",
+      "of the Devils": "of the Devils",
+      "of Horror": "of Glory",
+      "of Reflection": "of Glory",
+      "of Marksmanship": "of Marksmanship",
+      "of the Rugged": "of the Rugged",
+      "of Thunder": "of Glory",
+      "of Speed": "of Speed",
+      "of War": "of War"
+   },
+   "of the Brave": {
+      "of the Dead": "of the Dead"
+   },
+   "Heavenly": {
+      "Thicc": "Thicc",
+      "Monstrous": "Heavenly",
+      "Resistant": "Resistant",
+      "Smoking": "Heavenly",
+      "Soul-Snatching": "Soul-Snatching"
+   },
+   "Monstrous": {
+      "Spiteful": "Spiteful",
+      "Venom-Tipped": "Monstrous",
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Samauri": "Monstrous",
+      "Smoking": "Smoking",
+      "Tormented": "Tormented",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Skeletal": "Skeletal",
+      "Resistant": "Resistant",
+      "Mysterious": "Mysterious",
+      "Shiny": "Shiny"
+   },
+   "Chainsaw": {
+      "Crossbow": "Crossbow",
+      "Cannon": "Chainsaw"
+   },
+   "Eagle-Eye": {
+      "Spiteful": "Spiteful",
+      "Stabproof": "Eagle-Eye",
+      "Venom-Tipped": "Venom-Tipped",
+      "Fearsome": "Eagle-Eye",
+      "Winter": "Eagle-Eye",
+      "Poisonous": "Eagle-Eye",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Leaf-Covered": "Leaf-Covered",
+      "Strengthened": "Eagle-Eye",
+      "Samauri": "Samauri",
+      "Wild": "Eagle-Eye",
+      "Solid": "Eagle-Eye",
+      "Enormous": "Eagle-Eye",
+      "Smoking": "Eagle-Eye",
+      "Waterproof": "Eagle-Eye",
+      "Stunning": "Eagle-Eye",
+      "Marvelous": "Eagle-Eye",
+      "Pointed": "Eagle-Eye",
+      "Padded": "Eagle-Eye",
+      "Flaming": "Eagle-Eye",
+      "Superior": "Eagle-Eye",
+      "Steady": "Eagle-Eye",
+      "Sharpened": "Eagle-Eye",
+      "Quick-Firing": "Eagle-Eye",
+      "Sturdy": "Eagle-Eye",
+      "Vicious": "Eagle-Eye",
+      "Tormented": "Tormented",
+      "Rusty": "Eagle-Eye",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Jagged": "Jagged",
+      "Shifty": "Eagle-Eye",
+      "Trusted": "Eagle-Eye",
+      "Enchanted": "Enchanted",
+      "Energy-Infused": "Eagle-Eye",
+      "Skeletal": "Skeletal",
+      "Resistant": "Eagle-Eye",
+      "Spiked": "Eagle-Eye",
+      "Elegant": "Eagle-Eye",
+      "Shiny": "Shiny"
+   },
+   "Scythe": {
+      "Boomerang": "Scythe",
+      "Knuckledusters": "Knuckledusters",
+      "Blade": "Scythe",
+      "Staff": "Staff",
+      "Chainsaw": "Scythe",
+      "Darts": "Darts",
+      "Hammer": "Hammer"
+   },
+   "Ivory": {
+      "Snakeskin": "Ivory",
+      "Wood": "Ivory",
+      "Leopardskin": "Ivory",
+      "Proselyte": "Ivory"
+   },
+   "Strengthened": {
+      "Waterproof": "Strengthened",
+      "Wild": "Wild"
+   },
+   "Shank": {
+      "Knife": "Shank",
+      "Katana": "Shank",
+      "Scythe": "Shank",
+      "Knuckledusters": "Knuckledusters",
+      "Staff": "Staff",
+      "Darts": "Shank"
+   },
+   "Shield": {
+      "Warshield": "Shield",
+      "Squareshield": "Shield",
+      "Vikingshield": "Shield"
+   },
+   "of Security": {
+      "of Thunder": "of Security"
+   },
+   "of Destruction": {
+      "of Fire": "of Fire",
+      "of Fury": "of Destruction",
+      "of Power": "of Power",
+      "of the Angels": "of the Angels",
+      "of the Dead": "of Destruction"
+   },
+   "of Intensity": {
+      "of Pride": "of Intensity"
+   },
+   "Bow": {
+      "Dagger": "Bow",
+      "Cannon": "Cannon"
+   },
+   "Samauri": {
+      "Serpentine": "Serpentine",
+      "Shiny": "Shiny",
+      "Skeletal": "Skeletal",
+      "Venom-Tipped": "Venom-Tipped",
+      "Vicious": "Vicious"
+   },
+   "Crossbow": {
+      "Bow": "Crossbow",
+      "Cannon": "Cannon"
+   },
+   "Arrows": {
+      "Staff": "Staff",
+      "Boomerang": "Arrows",
+      "Chainsaw": "Chainsaw",
+      "Bow": "Arrows",
+      "Crossbow": "Crossbow",
+      "Warhammer": "Arrows",
+      "Hatchet": "Arrows",
+      "Firecracker": "Firecracker",
+      "Battle-axe": "Arrows",
+      "Cannon": "Cannon"
+   },
+   "Dangerous": {
+      "Spiteful": "Spiteful",
+      "Venom-Tipped": "Venom-Tipped",
+      "Demonic": "Demonic",
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Levitating": "Levitating",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Samauri": "Samauri",
+      "Flexible": "Dangerous",
+      "Tormented": "Tormented",
+      "Soul-Snatching": "Soul-Snatching",
+      "Flawless": "Dangerous",
+      "Thicc": "Thicc",
+      "Lethal": "Lethal",
+      "Skeletal": "Skeletal",
+      "Hell-raising": "Hell-raising",
+      "Mesmorizing": "Dangerous",
+      "Mindblowing": "Dangerous",
+      "Mysterious": "Mysterious",
+      "Shiny": "Shiny"
+   },
+   "of Absorbtion": {
+      "of the Fearless": "of Absorbtion",
+      "of Battle": "of Battle",
+      "of Protection": "of Absorbtion",
+      "of Accuracy": "of Absorbtion",
+      "of Deflection": "of Deflection",
+      "of Vengeance": "of Vengeance",
+      "of the Victorious": "of Absorbtion",
+      "of Glory": "of Absorbtion",
+      "of the Brave": "of the Brave",
+      "of Security": "of Absorbtion",
+      "of Destruction": "of Destruction",
+      "of Intensity": "of Absorbtion",
+      "of the Angels": "of the Angels",
+      "of Mighty": "of Absorbtion",
+      "of Death": "of Death",
+      "of Murder": "of Murder",
+      "of Doom": "of Doom",
+      "of the Devils": "of Absorbtion",
+      "of Horror": "of Absorbtion",
+      "of Reflection": "of Absorbtion",
+      "of Rage": "of Rage",
+      "of Darkness": "of Darkness",
+      "of Defense": "of Defense",
+      "of Marksmanship": "of Absorbtion",
+      "of the Rugged": "of Absorbtion",
+      "of Anguish": "of Absorbtion",
+      "of Dexterity": "of Absorbtion",
+      "of Thunder": "of Absorbtion",
+      "of Power": "of Power",
+      "of the Dead": "of the Dead",
+      "of Combat": "of Combat",
+      "of Anger": "of Anger",
+      "of Speed": "of Absorbtion",
+      "of Fury": "of Fury",
+      "of War": "of Absorbtion",
+      "of Pride": "of Absorbtion",
+      "of Fire": "of Fire"
+   },
+   "Bear-Fur": {
+      "Stone": "Bear-Fur",
+      "Iron": "Iron",
+      "Wood": "Bear-Fur",
+      "Studded-Leather": "Bear-Fur",
+      "Brass": "Brass",
+      "Dragonhide": "Dragonhide",
+      "Silk": "Bear-Fur",
+      "Ceramic": "Bear-Fur",
+      "Leopardskin": "Bear-Fur",
+      "Water": "Bear-Fur",
+      "Devil-Horned": "Devil-Horned",
+      "Sheepskin": "Bear-Fur",
+      "Bronze": "Bronze",
+      "Hardened-Clay": "Bear-Fur",
+      "Proselyte": "Proselyte"
+   },
+   "Arrow-Catching": {
+      "Demonic": "Arrow-Catching",
+      "Astonishing": "Astonishing",
+      "Heavenly": "Heavenly",
+      "Dangerous": "Arrow-Catching",
+      "Flexible": "Arrow-Catching",
+      "Corrupted": "Arrow-Catching",
+      "Corrupt": "Corrupt",
+      "Basic": "Basic",
+      "Barbed": "Arrow-Catching",
+      "Flawless": "Flawless",
+      "Thicc": "Thicc",
+      "Blessed": "Blessed",
+      "Bright": "Bright"
+   },
+   "of Mighty": {
+      "of Speed": "of Mighty",
+      "of War": "of War",
+      "of the Rugged": "of Mighty",
+      "of the Victorious": "of Mighty"
+   },
+   "Steel": {
+      "Steel-Plated": "Steel"
+   },
+   "Javelin": {
+      "Warhammer": "Warhammer"
+   },
+   "Solid": {
+      "Steady": "Steady"
+   },
+   "Jeans": {
+      "Pants": "Jeans",
+      "Trousers": "Trousers"
+   },
+   "of Death": {
+      "of Doom": "of Doom",
+      "of Power": "of Death",
+      "of the Angels": "of Death"
+   },
+   "Flexible": {
+      "Lethal": "Lethal",
+      "Levitating": "Levitating",
+      "Mesmorizing": "Flexible",
+      "Mindblowing": "Flexible",
+      "Monstrous": "Monstrous",
+      "Heavenly": "Flexible",
+      "Resistant": "Flexible",
+      "Soul-Snatching": "Soul-Snatching"
+   },
+   "Enormous": {
+      "Fearsome": "Fearsome",
+      "Strengthened": "Enormous",
+      "Wild": "Enormous",
+      "Waterproof": "Enormous",
+      "Flaming": "Flaming",
+      "Superior": "Superior",
+      "Sharpened": "Sharpened",
+      "Vicious": "Vicious",
+      "Lethal": "Enormous",
+      "Skeletal": "Skeletal",
+      "Leaf-Bladed": "Leaf-Bladed"
+   },
+   "Mask": {
+      "Helmet": "Mask",
+      "Halo": "Mask",
+      "Hood": "Hood",
+      "Hat": "Mask",
+      "Sombraro": "Mask",
+      "Turban": "Turban"
+   },
+   "Corrupted": {
+      "Stabproof": "Stabproof",
+      "Venom-Tipped": "Corrupted",
+      "Demonic": "Demonic",
+      "Winter": "Winter",
+      "Poisonous": "Corrupted",
+      "Serpentine": "Corrupted",
+      "Possessed": "Possessed",
+      "Furious": "Corrupted",
+      "Levitating": "Corrupted",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Strengthened": "Corrupted",
+      "Samauri": "Corrupted",
+      "Dangerous": "Corrupted",
+      "Solid": "Corrupted",
+      "Smoking": "Smoking",
+      "Waterproof": "Corrupted",
+      "Invisible": "Invisible",
+      "Pointed": "Corrupted",
+      "Padded": "Padded",
+      "Flaming": "Flaming",
+      "Superior": "Superior",
+      "Steady": "Steady",
+      "Sharpened": "Sharpened",
+      "Quick-Firing": "Quick-Firing",
+      "Vicious": "Corrupted",
+      "Soul-Snatching": "Soul-Snatching",
+      "Flawless": "Corrupted",
+      "Thicc": "Thicc",
+      "Shifty": "Shifty",
+      "Trusted": "Trusted",
+      "Enchanted": "Corrupted",
+      "Lethal": "Corrupted",
+      "Skeletal": "Corrupted",
+      "Hell-raising": "Hell-raising",
+      "Resistant": "Resistant",
+      "Spiked": "Spiked",
+      "Shiny": "Shiny"
+   },
+   "Bandit's": {
+      "Prisoner's": "Bandit's",
+      "Thief's": "Bandit's"
+   },
+   "Helmet": {
+      "Mask": "Helmet",
+      "Crown": "Crown",
+      "Hat": "Hat",
+      "Halo": "Helmet",
+      "Sombraro": "Sombraro"
+   },
+   "Corrupt": {
+      "Heavenly": "Heavenly",
+      "Thicc": "Thicc",
+      "Elegant": "Corrupt"
+   },
+   "Admirable": {
+      "Confounding": "Admirable",
+      "Fearsome": "Fearsome",
+      "Demonic": "Demonic",
+      "Astonishing": "Admirable",
+      "Poisonous": "Poisonous",
+      "Furious": "Furious",
+      "Leaf-Covered": "Admirable",
+      "Dusty": "Admirable",
+      "Levitating": "Levitating",
+      "Heavenly": "Heavenly",
+      "Eagle-Eye": "Eagle-Eye",
+      "Dangerous": "Dangerous",
+      "Arrow-Catching": "Arrow-Catching",
+      "Flexible": "Flexible",
+      "Enormous": "Enormous",
+      "Corrupted": "Corrupted",
+      "Corrupt": "Corrupt",
+      "Invisible": "Invisible",
+      "Basic": "Admirable",
+      "Marvelous": "Marvelous",
+      "Barbed": "Barbed",
+      "Pointed": "Pointed",
+      "Padded": "Padded",
+      "Flaming": "Flaming",
+      "Dull": "Admirable",
+      "Gracious": "Admirable",
+      "Dirty": "Admirable",
+      "Flawless": "Flawless",
+      "Broken": "Broken",
+      "Jagged": "Admirable",
+      "Enchanted": "Enchanted",
+      "Lethal": "Lethal",
+      "Energy-Infused": "Energy-Infused",
+      "Hell-raising": "Hell-raising",
+      "Exceptional": "Admirable",
+      "Healing": "Healing",
+      "Blessed": "Blessed",
+      "Bright": "Bright",
+      "Leaf-Bladed": "Admirable",
+      "Agile": "Agile",
+      "Elegant": "Elegant",
+      "Marching": "Marching"
+   },
+   "Invisible": {
+      "Possessed": "Invisible",
+      "Shiny": "Invisible",
+      "Thicc": "Thicc"
+   },
+   "Basic": {
+      "Blessed": "Blessed",
+      "Corrupted": "Corrupted",
+      "Demonic": "Demonic",
+      "Dirty": "Dirty",
+      "Dull": "Dull",
+      "Dusty": "Dusty"
+   },
+   "Graphene": {
+      "Iron": "Iron",
+      "Magma-Infused": "Magma-Infused",
+      "Rhinoskin": "Graphene",
+      "Steel-Plated": "Graphene"
+   },
+   "Marvelous": {
+      "Stabproof": "Marvelous",
+      "Winter": "Marvelous",
+      "Solid": "Marvelous",
+      "Smoking": "Smoking",
+      "Stunning": "Marvelous",
+      "Pointed": "Marvelous",
+      "Padded": "Marvelous",
+      "Steady": "Marvelous",
+      "Quick-Firing": "Marvelous",
+      "Sturdy": "Marvelous",
+      "Rusty": "Marvelous",
+      "Shifty": "Marvelous",
+      "Trusted": "Marvelous",
+      "Resistant": "Marvelous",
+      "Spiked": "Marvelous"
+   },
+   "Warrior's": {
+      "Wizzard's": "Wizzard's"
+   },
+   "Barbed": {
+      "Spiteful": "Spiteful",
+      "Venom-Tipped": "Venom-Tipped",
+      "Demonic": "Demonic",
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Furious": "Barbed",
+      "Levitating": "Levitating",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Eagle-Eye": "Barbed",
+      "Samauri": "Samauri",
+      "Dangerous": "Dangerous",
+      "Flexible": "Flexible",
+      "Corrupted": "Corrupted",
+      "Corrupt": "Corrupt",
+      "Invisible": "Invisible",
+      "Basic": "Barbed",
+      "Tormented": "Tormented",
+      "Soul-Snatching": "Soul-Snatching",
+      "Flawless": "Flawless",
+      "Thicc": "Thicc",
+      "Broken": "Barbed",
+      "Lethal": "Lethal",
+      "Energy-Infused": "Barbed",
+      "Skeletal": "Skeletal",
+      "Hell-raising": "Hell-raising",
+      "Healing": "Barbed",
+      "Blessed": "Blessed",
+      "Mesmorizing": "Mesmorizing",
+      "Elegant": "Elegant",
+      "Mindblowing": "Mindblowing",
+      "Mysterious": "Mysterious",
+      "Shiny": "Shiny",
+      "Marching": "Barbed"
+   },
+   "Britches": {
+      "Underwear": "Underwear",
+      "Chainskirt": "Britches",
+      "Robeskirt": "Britches",
+      "Plateskirt": "Britches",
+      "Overalls": "Overalls",
+      "Trousers": "Britches"
+   },
+   "Archer's": {
+      "Assassin's": "Assassin's",
+      "Bandit's": "Archer's",
+      "Fearless-Fighter's": "Fearless-Fighter's",
+      "Hero's": "Hero's",
+      "Prisoner's": "Archer's",
+      "Thief's": "Archer's"
+   },
+   "Hatchet": {
+      "Sword": "Sword",
+      "Javelin": "Javelin"
+   },
+   "Pointed": {
+      "Resistant": "Resistant",
+      "Stabproof": "Stabproof",
+      "Samauri": "Pointed",
+      "Vicious": "Pointed"
+   },
+   "of Murder": {
+      "of Vengeance": "of Vengeance"
+   },
+   "Padded": {
+      "Stabproof": "Stabproof",
+      "Winter": "Padded",
+      "Solid": "Padded",
+      "Stunning": "Padded",
+      "Pointed": "Pointed",
+      "Superior": "Superior",
+      "Steady": "Padded",
+      "Quick-Firing": "Padded",
+      "Sturdy": "Padded",
+      "Rusty": "Padded",
+      "Shifty": "Padded",
+      "Trusted": "Padded",
+      "Resistant": "Resistant",
+      "Spiked": "Spiked"
+   },
+   "Flaming": {
+      "Stabproof": "Flaming",
+      "Winter": "Winter",
+      "Padded": "Padded",
+      "Superior": "Superior",
+      "Sharpened": "Sharpened",
+      "Quick-Firing": "Quick-Firing",
+      "Shifty": "Shifty",
+      "Spiked": "Flaming"
+   },
+   "Armour": {
+      "Chestplate": "Chestplate",
+      "Platebody": "Armour",
+      "Robe": "Robe",
+      "Chainmail": "Armour",
+      "Ringmail": "Ringmail",
+      "Chainskirt": "Chainskirt"
+   },
+   "Brass": {
+      "Stone": "Brass",
+      "Iron": "Iron",
+      "Ivory": "Brass",
+      "Steel": "Steel",
+      "Wood": "Brass",
+      "Graphene": "Graphene",
+      "Studded-Leather": "Brass",
+      "Steel-Plated": "Steel-Plated",
+      "Rhinoskin": "Rhinoskin",
+      "Dragonhide": "Dragonhide",
+      "Silk": "Brass",
+      "Crystal": "Crystal",
+      "Leopardskin": "Brass",
+      "Water": "Brass",
+      "Devil-Horned": "Brass",
+      "Sheepskin": "Brass",
+      "Magma-Infused": "Magma-Infused",
+      "Bronze": "Bronze",
+      "Hardened-Clay": "Brass",
+      "Snakeskin": "Brass",
+      "Proselyte": "Brass"
+   },
+   "Warshield": {
+      "Kiteshield": "Kiteshield"
+   },
+   "Rhinoskin": {
+      "Steel-Plated": "Steel-Plated"
+   },
+   "Assassin's": {
+      "Azamat's": "Azamat's",
+      "Hero's": "Assassin's",
+      "Fearless-Fighter's": "Assassin's",
+      "Richman's": "Richman's"
+   },
+   "Dull": {
+      "Dusty": "Dull",
+      "Eagle-Eye": "Dull",
+      "Jagged": "Dull",
+      "Leaf-Covered": "Dull",
+      "Poisonous": "Dull",
+      "Strengthened": "Dull"
+   },
+   "Gracious": {
+      "Jagged": "Jagged",
+      "Leaf-Bladed": "Leaf-Bladed"
+   },
+   "Superior": {
+      "Vicious": "Superior"
+   },
+   "Protector": {
+      "Vikingshield": "Vikingshield"
+   },
+   "Chainskirt": {
+      "Overalls": "Overalls",
+      "Trousers": "Chainskirt",
+      "Jeans": "Chainskirt"
+   },
+   "Sharpened": {
+      "Superior": "Superior",
+      "Vicious": "Vicious"
+   },
+   "Sneakers": {
+      "Soles": "Soles",
+      "Boots": "Boots"
+   },
+   "Deflector": {
+      "Squareshield": "Deflector",
+      "Bucklershield": "Bucklershield",
+      "Protector": "Protector"
+   },
+   "Dirty": {
+      "Dull": "Dirty",
+      "Dusty": "Dusty",
+      "Eagle-Eye": "Dirty",
+      "Strengthened": "Dirty"
+   },
+   "of the Devils": {
+      "of the Fearless": "of the Devils"
+   },
+   "of Horror": {
+      "of Marksmanship": "of Marksmanship",
+      "of Protection": "of Horror",
+      "of Reflection": "of Horror",
+      "of Security": "of Security",
+      "of Thunder": "of Thunder"
+   },
+   "Quick-Firing": {
+      "Winter": "Quick-Firing",
+      "Solid": "Quick-Firing",
+      "Stunning": "Stunning",
+      "Steady": "Quick-Firing",
+      "Sturdy": "Quick-Firing",
+      "Rusty": "Quick-Firing",
+      "Shifty": "Quick-Firing",
+      "Trusted": "Quick-Firing"
+   },
+   "Sturdy": {
+      "Trusted": "Sturdy",
+      "Winter": "Sturdy"
+   },
+   "Darts": {
+      "Hammer": "Darts"
+   },
+   "Accurate": {
+      "Stabproof": "Accurate",
+      "Confounding": "Accurate",
+      "Aggressive": "Accurate",
+      "Fearsome": "Fearsome",
+      "Astonishing": "Accurate",
+      "Winter": "Accurate",
+      "Possessed": "Possessed",
+      "Furious": "Accurate",
+      "Leaf-Covered": "Accurate",
+      "Dusty": "Accurate",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Arrow-Catching": "Arrow-Catching",
+      "Flexible": "Flexible",
+      "Smoking": "Smoking",
+      "Corrupted": "Accurate",
+      "Corrupt": "Corrupt",
+      "Admirable": "Admirable",
+      "Invisible": "Invisible",
+      "Basic": "Accurate",
+      "Barbed": "Barbed",
+      "Padded": "Accurate",
+      "Flaming": "Accurate",
+      "Dull": "Accurate",
+      "Gracious": "Accurate",
+      "Superior": "Accurate",
+      "Steady": "Steady",
+      "Sharpened": "Sharpened",
+      "Dirty": "Accurate",
+      "Quick-Firing": "Accurate",
+      "Soul-Snatching": "Soul-Snatching",
+      "Flawless": "Accurate",
+      "Thicc": "Thicc",
+      "Broken": "Broken",
+      "Jagged": "Accurate",
+      "Shifty": "Accurate",
+      "Trusted": "Trusted",
+      "Enchanted": "Accurate",
+      "Lethal": "Accurate",
+      "Energy-Infused": "Energy-Infused",
+      "Hell-raising": "Hell-raising",
+      "Exceptional": "Exceptional",
+      "Blessed": "Blessed",
+      "Leaf-Bladed": "Accurate",
+      "Agile": "Accurate",
+      "Resistant": "Resistant",
+      "Spiked": "Accurate",
+      "Elegant": "Elegant"
+   },
+   "Bamboo": {
+      "Bear-Fur": "Bear-Fur",
+      "Brass": "Brass",
+      "Ceramic": "Ceramic",
+      "Hardened-Clay": "Bamboo",
+      "Sheepskin": "Bamboo",
+      "Wood": "Wood"
+   },
+   "Chestplate": {
+      "Robe": "Robe",
+      "Vest": "Vest",
+      "Platebody": "Chestplate",
+      "Chainmail": "Chainmail",
+      "Ringmail": "Chestplate",
+      "Chainbody": "Chestplate"
+   },
+   "Rusty": {
+      "Shifty": "Shifty",
+      "Solid": "Solid",
+      "Steady": "Steady"
+   },
+   "Dragonhide": {
+      "Graphene": "Dragonhide",
+      "Iron": "Iron",
+      "Magma-Infused": "Magma-Infused",
+      "Rhinoskin": "Dragonhide",
+      "Steel": "Steel"
+   },
+   "Silk": {
+      "Water": "Silk",
+      "Wood": "Silk"
+   },
+   "Soul-Snatching": {
+      "Thicc": "Thicc"
+   },
+   "Flawless": {
+      "Levitating": "Levitating",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Samauri": "Samauri",
+      "Solid": "Flawless",
+      "Flexible": "Flawless",
+      "Pointed": "Pointed",
+      "Vicious": "Vicious",
+      "Lethal": "Lethal",
+      "Mysterious": "Mysterious"
+   },
+   "Broken": {
+      "Fearsome": "Broken",
+      "Possessed": "Broken",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Eagle-Eye": "Eagle-Eye",
+      "Flexible": "Flexible",
+      "Enormous": "Enormous",
+      "Smoking": "Smoking",
+      "Corrupt": "Corrupt",
+      "Marvelous": "Marvelous",
+      "Pointed": "Pointed",
+      "Padded": "Padded",
+      "Sharpened": "Broken",
+      "Quick-Firing": "Quick-Firing",
+      "Rusty": "Rusty",
+      "Soul-Snatching": "Soul-Snatching",
+      "Enchanted": "Enchanted",
+      "Energy-Infused": "Energy-Infused",
+      "Hell-raising": "Broken",
+      "Exceptional": "Broken",
+      "Resistant": "Resistant",
+      "Elegant": "Elegant"
+   },
+   "Slippers": {
+      "Sandals": "Sandals",
+      "Sneakers": "Slippers",
+      "Boots": "Slippers",
+      "Rock-Climbers": "Rock-Climbers",
+      "Heel-Stoppers": "Heel-Stoppers",
+      "Runners": "Runners"
+   },
+   "Mace": {
+      "Blowpipe": "Blowpipe",
+      "Staff": "Staff",
+      "Knuckledusters": "Knuckledusters",
+      "Boomerang": "Boomerang",
+      "Chainsaw": "Chainsaw",
+      "Scythe": "Scythe",
+      "Crossbow": "Crossbow",
+      "Arrows": "Mace",
+      "Dagger": "Dagger",
+      "Javelin": "Mace",
+      "Warhammer": "Mace",
+      "Hatchet": "Mace",
+      "Darts": "Darts",
+      "Blade": "Blade",
+      "Battle-axe": "Battle-axe",
+      "Spear": "Mace",
+      "Lance": "Lance",
+      "Sword": "Mace"
+   },
+   "Ceramic": {
+      "Crystal": "Crystal",
+      "Hardened-Clay": "Ceramic",
+      "Leopardskin": "Leopardskin",
+      "Sheepskin": "Ceramic",
+      "Silk": "Silk",
+      "Stone": "Stone",
+      "Water": "Water",
+      "Wood": "Ceramic"
+   },
+   "Crystal": {
+      "Dragonhide": "Crystal",
+      "Iron": "Iron",
+      "Magma-Infused": "Crystal"
+   },
+   "of Darkness": {
+      "of Death": "of Darkness",
+      "of Doom": "of Doom"
+   },
+   "Lumberjack's": {
+      "Pirate's": "Pirate's",
+      "Prisoner's": "Lumberjack's",
+      "Thief's": "Lumberjack's"
+   },
+   "Katana": {
+      "Knife": "Katana",
+      "Scythe": "Katana",
+      "Mace": "Mace",
+      "Spear": "Spear",
+      "Hatchet": "Katana",
+      "Sword": "Sword",
+      "Javelin": "Javelin"
+   },
+   "Jagged": {
+      "Leaf-Bladed": "Jagged",
+      "Leaf-Covered": "Leaf-Covered"
+   },
+   "Leopardskin": {
+      "Magma-Infused": "Magma-Infused",
+      "Sheepskin": "Leopardskin",
+      "Silk": "Leopardskin",
+      "Stone": "Stone",
+      "Studded-Leather": "Studded-Leather",
+      "Water": "Leopardskin",
+      "Wood": "Leopardskin"
+   },
+   "Ninjastars": {
+      "Shank": "Ninjastars",
+      "Katana": "Ninjastars",
+      "Knuckledusters": "Knuckledusters",
+      "Staff": "Ninjastars"
+   },
+   "Shifty": {
+      "Solid": "Shifty",
+      "Steady": "Shifty",
+      "Sturdy": "Sturdy",
+      "Trusted": "Trusted",
+      "Winter": "Winter"
+   },
+   "Crown": {
+      "Hat": "Crown",
+      "Gasmask": "Crown",
+      "Halo": "Halo",
+      "Turban": "Crown"
+   },
+   "of Defense": {
+      "of Murder": "of Defense",
+      "of Rage": "of Rage",
+      "of Vengeance": "of Defense"
+   },
+   "Trusted": {
+      "Winter": "Trusted"
+   },
+   "Water": {
+      "Wood": "Wood"
+   },
+   "Devil-Horned": {
+      "Stone": "Devil-Horned",
+      "Ivory": "Ivory",
+      "Wood": "Devil-Horned",
+      "Studded-Leather": "Devil-Horned",
+      "Silk": "Devil-Horned",
+      "Leopardskin": "Devil-Horned",
+      "Water": "Devil-Horned",
+      "Sheepskin": "Devil-Horned",
+      "Snakeskin": "Snakeskin",
+      "Proselyte": "Devil-Horned"
+   },
+   "Underwear": {
+      "Robeskirt": "Robeskirt",
+      "Plateskirt": "Underwear"
+   },
+   "Trousers": {
+      "Underwear": "Underwear",
+      "Robeskirt": "Robeskirt",
+      "Plateskirt": "Plateskirt"
+   },
+   "Kiteshield": {
+      "Squareshield": "Squareshield",
+      "Warshield": "Warshield",
+      "Deflector": "Deflector"
+   },
+   "Magma-Infused": {
+      "Steel": "Magma-Infused"
+   },
+   "Enchanted": {
+      "Venom-Tipped": "Enchanted",
+      "Serpentine": "Enchanted",
+      "Possessed": "Possessed",
+      "Furious": "Enchanted",
+      "Levitating": "Enchanted",
+      "Samauri": "Samauri",
+      "Solid": "Solid",
+      "Waterproof": "Enchanted",
+      "Pointed": "Pointed",
+      "Vicious": "Vicious",
+      "Flawless": "Flawless",
+      "Energy-Infused": "Enchanted"
+   },
+   "Lethal": {
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Levitating": "Lethal",
+      "Monstrous": "Lethal",
+      "Tormented": "Lethal",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Skeletal": "Skeletal",
+      "Mysterious": "Lethal",
+      "Shiny": "Shiny"
+   },
+   "Chainmail": {
+      "Ringmail": "Ringmail",
+      "Platebody": "Chainmail"
+   },
+   "Blade": {
+      "Hatchet": "Hatchet",
+      "Staff": "Staff",
+      "Chainsaw": "Blade"
+   },
+   "of Marksmanship": {
+      "of Mighty": "of Mighty",
+      "of Speed": "of Speed",
+      "of War": "of War",
+      "of the Devils": "of Marksmanship",
+      "of the Fearless": "of Marksmanship",
+      "of the Rugged": "of the Rugged",
+      "of the Victorious": "of the Victorious"
+   },
+   "Battle-axe": {
+      "Blowpipe": "Battle-axe",
+      "Hammer": "Battle-axe",
+      "Chainsaw": "Chainsaw",
+      "Bow": "Bow",
+      "Crossbow": "Crossbow",
+      "Dagger": "Battle-axe",
+      "Warhammer": "Battle-axe",
+      "Darts": "Battle-axe",
+      "Blade": "Battle-axe",
+      "Lance": "Battle-axe",
+      "Cannon": "Cannon"
+   },
+   "Knight's": {
+      "Thief's": "Knight's",
+      "Rich Man's": "Rich Man's",
+      "Prisoner's": "Knight's",
+      "Pirate's": "Pirate's",
+      "Richman's": "Richman's",
+      "Wizzard's": "Wizzard's",
+      "Warrior's": "Warrior's",
+      "Lumberjack's": "Knight's",
+      "Mage's": "Mage's"
+   },
+   "Energy-Infused": {
+      "Fearsome": "Energy-Infused",
+      "Strengthened": "Energy-Infused",
+      "Wild": "Energy-Infused",
+      "Enormous": "Energy-Infused",
+      "Waterproof": "Energy-Infused",
+      "Flaming": "Energy-Infused",
+      "Superior": "Energy-Infused",
+      "Sharpened": "Energy-Infused",
+      "Vicious": "Energy-Infused",
+      "Soul-Snatching": "Soul-Snatching"
+   },
+   "Hell-raising": {
+      "Invisible": "Invisible",
+      "Possessed": "Possessed",
+      "Shiny": "Shiny",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Sharpened": "Hell-raising"
+   },
+   "Spear": {
+      "Arrows": "Arrows",
+      "Hatchet": "Spear",
+      "Sword": "Spear",
+      "Javelin": "Spear",
+      "Warhammer": "Warhammer"
+   },
+   "Rock-Climbers": {
+      "Water-Walkers": "Water-Walkers",
+      "Runners": "Rock-Climbers",
+      "Shoes": "Shoes"
+   },
+   "Exceptional": {
+      "Fearsome": "Exceptional",
+      "Hell-raising": "Exceptional",
+      "Invisible": "Exceptional",
+      "Monstrous": "Monstrous",
+      "Resistant": "Resistant",
+      "Smoking": "Smoking",
+      "Thicc": "Exceptional"
+   },
+   "Healing": {
+      "Marching": "Healing"
+   },
+   "Bronze": {
+      "Crystal": "Crystal",
+      "Dragonhide": "Bronze",
+      "Iron": "Iron",
+      "Magma-Infused": "Magma-Infused",
+      "Steel": "Steel",
+      "Steel-Plated": "Steel-Plated"
+   },
+   "Blessed": {
+      "Bright": "Bright",
+      "Corrupt": "Blessed",
+      "Heavenly": "Heavenly",
+      "Thicc": "Thicc",
+      "Broken": "Broken",
+      "Corrupted": "Blessed"
+   },
+   "Bright": {
+      "Heavenly": "Heavenly",
+      "Thicc": "Thicc"
+   },
+   "of Anguish": {
+      "of Dexterity": "of Dexterity",
+      "of Intensity": "of Intensity",
+      "of Pride": "of Pride"
+   },
+   "Platelegs": {
+      "Stockings": "Stockings",
+      "Pants": "Pants",
+      "Jeans": "Jeans"
+   },
+   "of Dexterity": {
+      "of Protection": "of Protection",
+      "of Glory": "of Glory",
+      "of Security": "of Security",
+      "of Intensity": "of Dexterity",
+      "of Mighty": "of Mighty",
+      "of Horror": "of Horror",
+      "of Reflection": "of Reflection",
+      "of Marksmanship": "of Marksmanship",
+      "of Speed": "of Speed",
+      "of Pride": "of Dexterity"
+   },
+   "Leaf-Bladed": {
+      "Lethal": "Leaf-Bladed",
+      "Skeletal": "Leaf-Bladed"
+   },
+   "Hardened-Clay": {
+      "Sheepskin": "Hardened-Clay"
+   },
+   "Hat": {
+      "Sombraro": "Hat"
+   },
+   "Lance": {
+      "Blowpipe": "Lance",
+      "Dagger": "Lance"
+   },
+   "Halo": {
+      "Hood": "Halo",
+      "Turban": "Halo",
+      "Sombraro": "Sombraro"
+   },
+   "Hood": {
+      "Sombraro": "Sombraro",
+      "Turban": "Turban"
+   },
+   "of Power": {
+      "of the Angels": "of the Angels"
+   },
+   "Agile": {
+      "Spiteful": "Spiteful",
+      "Venom-Tipped": "Venom-Tipped",
+      "Fearsome": "Agile",
+      "Demonic": "Demonic",
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Possessed": "Possessed",
+      "Furious": "Furious",
+      "Levitating": "Levitating",
+      "Heavenly": "Heavenly",
+      "Monstrous": "Monstrous",
+      "Eagle-Eye": "Agile",
+      "Samauri": "Samauri",
+      "Dangerous": "Dangerous",
+      "Arrow-Catching": "Arrow-Catching",
+      "Flexible": "Flexible",
+      "Enormous": "Agile",
+      "Corrupted": "Corrupted",
+      "Corrupt": "Corrupt",
+      "Invisible": "Invisible",
+      "Marvelous": "Agile",
+      "Barbed": "Barbed",
+      "Pointed": "Agile",
+      "Padded": "Agile",
+      "Flaming": "Agile",
+      "Tormented": "Tormented",
+      "Soul-Snatching": "Soul-Snatching",
+      "Flawless": "Flawless",
+      "Thicc": "Thicc",
+      "Broken": "Agile",
+      "Enchanted": "Agile",
+      "Lethal": "Lethal",
+      "Energy-Infused": "Agile",
+      "Skeletal": "Skeletal",
+      "Hell-raising": "Hell-raising",
+      "Healing": "Healing",
+      "Blessed": "Blessed",
+      "Bright": "Bright",
+      "Mesmorizing": "Mesmorizing",
+      "Elegant": "Agile",
+      "Mindblowing": "Mindblowing",
+      "Mysterious": "Mysterious",
+      "Shiny": "Shiny",
+      "Marching": "Marching"
+   },
+   "Mesmorizing": {
+      "Mindblowing": "Mindblowing"
+   },
+   "of Agility": {
+      "of Anger": "of Anger"
+   },
+   "Pants": {
+      "Platelegs": "Platelegs",
+      "Armour": "Armour",
+      "Chainskirt": "Chainskirt",
+      "Jeans": "Pants",
+      "Underwear": "Pants",
+      "Robeskirt": "Pants",
+      "Plateskirt": "Pants",
+      "Trousers": "Pants"
+   },
+   "Sombraro": {
+      "Turban": "Turban"
+   },
+   "of Combat": {
+      "of Dexterity": "of Combat",
+      "of Defense": "of Combat",
+      "of Rage": "of Combat"
+   },
+   "Resistant": {
+      "Stabproof": "Resistant",
+      "Soul-Snatching": "Soul-Snatching"
+   },
+   "Plateskirt": {
+      "Robeskirt": "Plateskirt"
+   },
+   "Sword": {
+      "Javelin": "Sword"
+   },
+   "Proselyte": {
+      "Sheepskin": "Proselyte",
+      "Wood": "Proselyte"
+   },
+   "of Anger": {
+      "of Battle": "of Battle",
+      "of Deflection": "of Deflection",
+      "of Vengeance": "of Anger",
+      "of the Brave": "of the Brave",
+      "of Destruction": "of Destruction",
+      "of the Angels": "of the Angels",
+      "of Death": "of Death",
+      "of Murder": "of Anger",
+      "of Doom": "of Doom",
+      "of Rage": "of Anger",
+      "of Darkness": "of Darkness",
+      "of Defense": "of Anger",
+      "of Power": "of Power",
+      "of the Dead": "of the Dead",
+      "of Combat": "of Anger",
+      "of Fury": "of Fury",
+      "of Fire": "of Fire"
+   },
+   "of Speed": {
+      "of the Rugged": "of Speed",
+      "of the Victorious": "of the Victorious"
+   },
+   "Spiked": {
+      "Stabproof": "Spiked"
+   },
+   "Elegant": {
+      "Stabproof": "Elegant",
+      "Fearsome": "Fearsome",
+      "Winter": "Elegant",
+      "Strengthened": "Strengthened",
+      "Wild": "Wild",
+      "Solid": "Elegant",
+      "Enormous": "Enormous",
+      "Smoking": "Elegant",
+      "Waterproof": "Waterproof",
+      "Stunning": "Elegant",
+      "Marvelous": "Elegant",
+      "Pointed": "Elegant",
+      "Padded": "Elegant",
+      "Flaming": "Flaming",
+      "Superior": "Superior",
+      "Steady": "Elegant",
+      "Sharpened": "Sharpened",
+      "Quick-Firing": "Elegant",
+      "Sturdy": "Elegant",
+      "Vicious": "Vicious",
+      "Rusty": "Elegant",
+      "Soul-Snatching": "Elegant",
+      "Shifty": "Elegant",
+      "Trusted": "Elegant",
+      "Energy-Infused": "Energy-Infused",
+      "Resistant": "Elegant",
+      "Spiked": "Elegant"
+   },
+   "Soles": {
+      "Sneakers": "Soles",
+      "Rock-Climbers": "Soles",
+      "Heel-Stoppers": "Soles",
+      "Side-Steppers": "Side-Steppers"
+   },
+   "Mage's": {
+      "Pirate's": "Mage's",
+      "Richman's": "Richman's",
+      "Warrior's": "Mage's",
+      "Wizzard's": "Mage's",
+      "Rich Man's": "Mage's"
+   },
+   "Mysterious": {
+      "Spiteful": "Mysterious",
+      "Poisonous": "Poisonous",
+      "Serpentine": "Serpentine",
+      "Tormented": "Tormented",
+      "Soul-Snatching": "Soul-Snatching",
+      "Thicc": "Thicc",
+      "Skeletal": "Skeletal",
+      "Shiny": "Shiny"
+   },
+   "of Fury": {
+      "of Power": "of Power",
+      "of the Angels": "of the Angels",
+      "of the Brave": "of Fury",
+      "of the Dead": "of the Dead"
+   },
+   "Shiny": {
+      "Thicc": "Thicc"
+   },
+   "of Fire": {
+      "of Power": "of Power",
+      "of the Angels": "of the Angels"
+   }
+}
