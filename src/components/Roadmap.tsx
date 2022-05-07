@@ -8,7 +8,7 @@ const roadmapData = [
         title: 'Minting Phase',
         content:
             'Bring 10,000 of Azamat’s precious treasures into the metaverse, distribute the treasures of the land to worthy warriors.',
-        extras: ['Public mint (0.0420ETH each) date TBD'],
+        extras: [`Public mint (0.0420ETH each) ${process.env.NEXT_PUBLIC_MINTDATE} CST`],
     },
     {
         title: 'Warriors',

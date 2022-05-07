@@ -32,7 +32,7 @@ const Masthead: React.FC = () => {
                             1 Billion+ Possible chest combinations
                         </Typography>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
-                            1 Million+ Traits
+                            1 Million+ Possible Traits
                         </Typography>
                     </Stack>
                 </Stack>
