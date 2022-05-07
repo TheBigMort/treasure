@@ -1,0 +1,35 @@
+{
+   "HEAD": {
+      "Category": 8694
+   },
+   "MATERIAL": {
+      "Category": 90523
+   },
+   "BOTTOMS": {
+      "Category": 20834
+   },
+   "SHIELD": {
+      "Category": 8095
+   },
+   "FOOTWEAR": {
+      "Category": 30571
+   },
+   "TAIL": {
+      "Category": 118225
+   },
+   "EXTRA": {
+      "Category": 90630
+   },
+   "POSSESSIVE": {
+      "Category": 93793
+   },
+   "AMULET": {
+      "Category": 2110
+   },
+   "TORSO": {
+      "Category": 11115
+   },
+   "WEAPON": {
+      "Category": 48526
+   }
+}

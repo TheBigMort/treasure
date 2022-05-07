@@ -1,19 +1,27 @@
 import * as fs from "fs";
-import { IChestItem2, Scores } from "metadata/types";
+import { List } from "immutable";
+import { Scores } from "metadata/rarityScores/types";
 import rarityScores from "../metadata/rarityScores";
 describe("assign rarity", () => {
   it("test 1", () => {
-    const items: string[] = [].concat(
-      ...(<any[]>(
-        JSON.parse(fs.readFileSync("./test/chests/chests_18.json").toString())
-      ))
-    );
+    const chests: string[][] = (<string[][]>(
+      JSON.parse(fs.readFileSync("./test/chests/chests_1.json").toString())
+    ))
     const rs = rarityScores();
-    rs.addItems(items);
-    const itemScores = <Scores["itemScores"]>rs.getScores().get("itemScores");
+    rs.addChests(chests);
+    const res: List<any> = List(
+      (<Scores["chestScores"]>rs.getScores().get("chestScores")).valueSeq()
+    );
+    const final = res.sortBy((val) => val.get("avgScore")).reverse().toJS();
+
+    fs.writeFileSync(
+      "./test/reports/chestScores.json",
+      JSON.stringify(final, null, 3)
+    );
+    /*     const itemScores = <Scores["itemScores"]>rs.getScores().get("itemScores");
     const formatted = itemScores
-      .groupBy((val: IChestItem2) => val.get("mainCat"))
-      .map((mapping) => mapping.sortBy((v) => v.get("score")).reverse());
+      .groupBy((val: IChestItem) => val.get("mainCat"))
+      .map((mapping) => mapping.sortBy((v) => v.get("score")).reverse()); */
     /*     itemScores.forEach((val) => {
       if (
         (<IMap<any, any>>val.get("brokenDown"))
@@ -24,7 +32,7 @@ describe("assign rarity", () => {
         console.log(val.get("item"));
       }
     }); */
-    console.log(
+    /*     console.log(
       (<any>rs.getScores().getIn(["mainModTotals", "Hammer"])!).toJS()
     );
     fs.writeFileSync(
@@ -34,7 +42,7 @@ describe("assign rarity", () => {
     fs.writeFileSync(
       "./test/reports/allScores.json",
       JSON.stringify(rs.getScores().toJS(), null, 3)
-    );
+    ); */
     /*     let chestScores: IMap<number, List<number>> = IMap();
     let tokenIdScores: IMap<string, number> = IMap();
     const allChestItems: string[][] = <string[][]>(

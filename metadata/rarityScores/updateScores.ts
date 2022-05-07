@@ -1,6 +1,10 @@
 import { Map as IMap } from "immutable";
-import { IChestItem2, IScores, ModCat, Scores } from "../types";
+import { ModCat } from "../types";
 import { calcChances } from "../utils/dataHelpers";
+import { IChestItem, IScores, Scores } from "./types";
+
+
+
 // type DeepMap<T extends IMap<any,any>> =
 export function updateScores(prev: IScores): IScores {
   function calcScoresDeep<T extends IMap<any, any>>(elem: T): T {
@@ -22,7 +26,7 @@ export function updateScores(prev: IScores): IScores {
     calcScoresDeep<Scores["mainItemTotals"]>(<IMap<any, any>>m)
   );
   return prev.update("itemScores", <Scores["itemScores"]>IMap(), (m) =>
-    (<Scores["itemScores"]>m).map((val: IChestItem2) => {
+    (<Scores["itemScores"]>m).map((val: IChestItem) => {
       let total: number = 1;
       let nones: number = 0;
       total *=

@@ -29,7 +29,7 @@
     "tailwind.config.js",
     "scripts",
     "test"
-  ],
+, "metadata/stuff.js"  ],
   "exclude": ["node_modules", "metadata"],
   "files": ["hardhat.config.ts"]
 }

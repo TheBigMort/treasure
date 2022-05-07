@@ -296,7 +296,7 @@
       "of Protection": "of Glory",
       "of the Victorious": "of the Victorious",
       "of Security": "of Glory",
-      "of Mighty": "of Mighty",
+      "of the Mighty": "of the Mighty",
       "of the Devils": "of the Devils",
       "of Horror": "of Glory",
       "of Reflection": "of Glory",
@@ -489,7 +489,7 @@
       "of Destruction": "of Destruction",
       "of Intensity": "of Absorbtion",
       "of the Angels": "of the Angels",
-      "of Mighty": "of Absorbtion",
+      "of the Mighty": "of Absorbtion",
       "of Death": "of Death",
       "of Murder": "of Murder",
       "of Doom": "of Doom",
@@ -546,11 +546,11 @@
       "Blessed": "Blessed",
       "Bright": "Bright"
    },
-   "of Mighty": {
-      "of Speed": "of Mighty",
+   "of the Mighty": {
+      "of Speed": "of the Mighty",
       "of War": "of War",
-      "of the Rugged": "of Mighty",
-      "of the Victorious": "of Mighty"
+      "of the Rugged": "of the Mighty",
+      "of the Victorious": "of the Mighty"
    },
    "Steel": {
       "Steel-Plated": "Steel"
@@ -1235,7 +1235,7 @@
       "Chainsaw": "Blade"
    },
    "of Marksmanship": {
-      "of Mighty": "of Mighty",
+      "of the Mighty": "of the Mighty",
       "of Speed": "of Speed",
       "of War": "of War",
       "of the Devils": "of Marksmanship",
@@ -1346,7 +1346,7 @@
       "of Glory": "of Glory",
       "of Security": "of Security",
       "of Intensity": "of Dexterity",
-      "of Mighty": "of Mighty",
+      "of the Mighty": "of the Mighty",
       "of Horror": "of Horror",
       "of Reflection": "of Reflection",
       "of Marksmanship": "of Marksmanship",

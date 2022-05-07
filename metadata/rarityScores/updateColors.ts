@@ -1,5 +1,8 @@
 import { Map as IMap } from "immutable";
-import { IChestItem2, IScores, Scores } from "../types";
+import { IChestItem, IScores, Scores } from "./types";
+
+
+
 const pr = {
   legend: 98,
   epic: 90,
@@ -10,7 +13,7 @@ const pr = {
 function updateColors(scores: IScores): IScores {
   let itemRanks: IMap<string, string> = IMap();
   (<Scores["itemScores"]>scores.get("itemScores"))
-    .groupBy((val: IChestItem2) => val.get("mainCat"))
+    .groupBy((val: IChestItem) => val.get("mainCat"))
     .map((v) => v.map((x) => x.get("score")))
     .forEach((v, k) => {
       let s: number[] = (<number[]>v.valueSeq().toArray()).sort(

@@ -1,6 +1,7 @@
 import { Map as IMap } from "immutable";
-import { IScores, modCats, Scores } from "../types";
+import { modCats } from '../types';
 import { breakdown } from "./breakdown";
+import { IScores, Scores } from "./types";
 import { updateScores } from "./updateScores";
 function addItems(
   items: string[],

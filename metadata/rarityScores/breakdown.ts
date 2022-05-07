@@ -1,11 +1,10 @@
-import * as fs from "fs";
 import { List, Map as IMap } from "immutable";
-import { IChestItem2, MainCat, mainCats, ModCat, Payload, Scores } from "../types";
-const prepCache: Payload = <Payload>(
-  JSON.parse(fs.readFileSync("./test/prep_cache.json").toString())
-);
+import prepCache from '../../items';
+import { MainCat, mainCats, ModCat } from "../types";
+import { IChestItem, Scores } from "./types";
+
 function breakdown(items: string[]): Scores['itemScores'] {
-  const itemBreakdown = (itemStr: string): IChestItem2 => {
+  const itemBreakdown = (itemStr: string): IChestItem => {
     let splits: string[] = itemStr.split(" of ");
     let tail: string = "";
     let rest: string = "";
@@ -60,7 +59,7 @@ function breakdown(items: string[]): Scores['itemScores'] {
         })
     ).filterNot((val) => val === mainItem);
     if (!mainItem || !mainCat) throw Error(`couldnt find main item`);
-    return <IChestItem2>IMap({
+    return <IChestItem>IMap({
       item: itemStr,
       mainCat: mainCat,
       mainItem: mainItem,
@@ -72,6 +71,6 @@ function breakdown(items: string[]): Scores['itemScores'] {
       }),
     });
   };
-  return IMap(items.map((item): [string, IChestItem2] => [item,itemBreakdown(item)]));
+  return IMap(items.map((item): [string, IChestItem] => [item,itemBreakdown(item)]));
 }
 export { breakdown };

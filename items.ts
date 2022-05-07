@@ -149,7 +149,7 @@ const prepped = {
                 'of Intensity',
                 'of the Angels',
                 'of Absorbtion',
-                'of Mighty',
+                'of the Mighty',
                 'of Death',
                 'of Murder',
                 'of Doom',

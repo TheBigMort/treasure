@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import { List, Map as IMap } from "immutable";
-import prepper from "./prepper";
+import { default as prepCache, default as prepped } from "../items";
 import {
   Analysis,
   Chest,
@@ -9,13 +9,10 @@ import {
   ItemStats,
   MainCat,
   mainCats,
-  ModCat,
-  Payload
+  ModCat
 } from "./types";
 const chestBaseDir = "./metadata/in/chests";
-const prepCache: Payload = <Payload>(
-  JSON.parse(fs.readFileSync("./test/prep_cache.json").toString())
-);
+
 let total = 0;
 
 function analyzer(): Chest[] {
@@ -106,10 +103,7 @@ function getStats(): IStats {
   let repeats: IMap<string, number> = IMap();
   let chestReps: IMap<List<string>, IMap<string, number>> = IMap();
   analyzer().forEach(addItem);
-  console.log(
-    repeats
-      .filter((val) => val > 1).reduce((p,n) => p+n)
-  );
+  console.log(repeats.filter((val) => val > 1).reduce((p, n) => p + n));
   console.log(totals.toJS());
   fs.writeFileSync(
     "./test/reports/repeats.json",
@@ -124,7 +118,11 @@ function getStats(): IStats {
   );
   fs.writeFileSync(
     "./test/reports/analyzed_chests2.json",
-    JSON.stringify(stats.toJS(), null, 3)
+    JSON.stringify(
+      stats.map((val) => IMap({ Category: val.get("Category") })).toJS(),
+      null,
+      3
+    )
   );
   return stats;
 
@@ -193,21 +191,20 @@ function getStats(): IStats {
 async function getCumStats() {
   const stats = getStats();
 
-  const prepped = await prepper();
   let anal: Analysis = IMap();
   const totals: IMap<number, number> = <IMap<number, number>>IMap(
     Object.entries({
-      '8': 4,
-      '9': 23,
-      '10': 66,
-      '11': 129,
-      '12': 191,
-      '13': 196,
-      '14': 172,
-      '15': 118,
-      '16': 67,
-      '17': 25,
-      '18': 9
+      "8": 119,
+      "9": 306,
+      "10": 648,
+      "11": 1248,
+      "12": 1775,
+      "13": 1906,
+      "14": 1673,
+      "15": 1197,
+      "16": 714,
+      "17": 300,
+      "18": 114,
     }).map(([k, v]) => [parseInt(k), v])
   );
   let totalsMax = ((): number => {
@@ -306,5 +303,7 @@ function calcChances<T>(
       ) / 1000
   );
 }
-
+(async () => {
+  await getCumStats();
+})();
 export { analyzer, getStats, getCumStats };

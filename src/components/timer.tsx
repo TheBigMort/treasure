@@ -13,11 +13,11 @@ type TimerSegmentType = {
 const TimerSegment: FC<TimerSegmentType> = ({ timePeriod, value }) => {
     const formattedValue: string = value.toString().padStart(2, '0');
     return (
-        <Stack direction="column" alignContent="center" textAlign={'center'}>
-            <Typography fontFamily="Aleo" fontSize="2rem">
+        <Stack direction="column" alignContent="center" textAlign={'center'} minWidth={50}>
+            <Typography fontFamily="Aleo" fontSize="1.5rem">
                 {formattedValue}
             </Typography>
-            <Typography fontFamily="Aleo" fontSize="2rem">
+            <Typography fontFamily="Aleo" fontSize="1.5rem">
                 {timePeriod}
             </Typography>
         </Stack>
@@ -58,9 +58,9 @@ const Timer: FC = () => {
             <Stack direction="row" spacing={3}>
                 {[
                     { timePeriod: 'Days', value: days },
-                    { timePeriod: 'Hours', value: hours },
-                    { timePeriod: 'Minutes', value: minutes },
-                    { timePeriod: 'Seconds', value: seconds },
+                    { timePeriod: 'Hrs', value: hours },
+                    { timePeriod: 'Mins', value: minutes },
+                    { timePeriod: 'Secs', value: seconds },
                 ].map((val: any) => (
                     <TimerSegment
                         key={val.timePeriod}

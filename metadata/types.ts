@@ -74,22 +74,3 @@ export type Analysis = IMap<
     IMap<"expected" | "actual", string | number | IMap<"All" | number, number>>
   >
 >;
-export interface Scores {
-  // mainItemTitle -> modCat -> modTitle -> occurences
-  mainModTotals: IMap<string, IMap<ModCat, IMap<string | "None", number>>>;
-  // mainCat -> mainItemTitle -> occurences
-  mainItemTotals: IMap<MainCat, IMap<string, number>>;
-  // fullItemTitle -> rarityScore
-  itemScores: IMap<string, IChestItem2>;
-}
-export type IScores = IMap<keyof Scores, Scores[keyof Scores]>;
-export type ChestItem2 = {
-  item: string,
-  mainCat: MainCat;
-  mainItem: string;
-  brokenDown: IMap<ModCat, string>;
-  score?: number;
-  color?: string;
-  rank?: string;
-};
-export type IChestItem2 = IMap<keyof ChestItem2, ChestItem2[keyof ChestItem2]>;
