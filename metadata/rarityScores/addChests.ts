@@ -23,12 +23,15 @@ function addChests(newChests: string[][], scores: IScores = IMap()): IScores {
     avgScores.push(<number>val.get("avgScore"));
     totScores.push(<number>val.get("score"));
   });
-  avgScores.sort((a, b) => a - b);
-  totScores.sort((a, b) => a - b);
+  avgScores.sort((a, b) => b - a);
+  totScores.sort((a, b) => b - a);
   return scores.update("chestScores", <Scores["chestScores"]>IMap(), (prev) =>
     (<Scores["chestScores"]>prev).map((val: IChest, _, iter) => {
-      val = val.set("avgRank", avgScores.indexOf(<number>val.get("avgScore"))+1);
-      val = val.set("rank", totScores.indexOf(<number>val.get("score"))+1);
+      val = val.set(
+        "avgRank",
+        avgScores.indexOf(<number>val.get("avgScore")) + 1
+      );
+      val = val.set("rank", totScores.indexOf(<number>val.get("score")) + 1);
       return val;
     })
   );

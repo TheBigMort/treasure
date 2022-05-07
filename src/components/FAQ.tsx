@@ -54,16 +54,16 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const faqData = [
     {
-        q: 'How many treasures exist and what is in each treasure?',
-        a: 'Each treasure has several items that pertain to a category: Head, Torso, Bottoms, Footwear, Weapon, Shield, Amulet, and Miscellaneous. There are only 10,000 but as the project progresses there might be expansions with completely new items, but there will be benefits only available to genesis treasure holders.',
+        q: 'How many Treasures exist and what is in each Treasure?',
+        a: 'Each Treasure has several items that pertain to a category: Head, Torso, Bottoms, Footwear, Weapon, Shield, Amulet, and Miscellaneous. There are only 10,000 but as the project progresses there might be expansions with completely new items, but there will be benefits only available to genesis Treasure holders.',
     },
     {
         q: 'How do I mint?',
-        a: 'Connect your Metamask wallet on our website and choose the amount of treasures you wish to mint. You can view your treasures in Opensea. The official Opensea link will be provided closer to mint.',
+        a: 'Connect your Metamask wallet on our website and choose the amount of Treasures you wish to mint. You can view your Treasures in Opensea. The official Opensea link will be provided closer to mint.',
     },
     {
-        q: `What is treasure?`,
-        a: `Treasure is randomized battle gear generated and stored on chain. Each treasure chest contains a variety of gear that warriors will use in battle. Ranging from armour, to weapons and survival gear. Feel free to use your treasure in any way you want.`,
+        q: `What is Treasure?`,
+        a: `Treasure is randomized battle gear generated and stored on chain. Each Treasure chest contains a variety of gear that warriors will use in battle. Ranging from armour, to weapons and survival gear. Feel free to use your Treasure in any way you want.`,
     },
 ];
 
