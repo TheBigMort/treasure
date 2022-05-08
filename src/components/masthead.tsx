@@ -11,6 +11,7 @@ const Masthead: React.FC = () => {
         <Parallax
             bgImage={mdUp ? '/assets/bg-image2.jpg' : '/assets/bg-image-narrow.jpg'}
             strength={300}
+            blur={5}
         >
             <Stack
                 justifyContent={'center'}
