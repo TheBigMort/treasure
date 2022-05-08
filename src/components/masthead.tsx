@@ -15,7 +15,7 @@ const Masthead: React.FC = () => {
         >
             <Stack
                 justifyContent={'center'}
-                pb="15rem"
+                pb="7rem"
                 sx={{
                     height: '94vh',
                     width: '100vw',
@@ -33,15 +33,13 @@ const Masthead: React.FC = () => {
                     >
                         <Image
                             src="/assets/logo.png"
-                            height={200}
-                            width={200}
+                            height={230}
+                            width={230}
                             layout="fixed"
                             alt="scroll down"
                         />
                     </Stack>
-                    <Typography fontSize={mdUp ? '3.25rem' : '2.5rem'} fontFamily="SF Pro">
-                        Treasure. (for Warriors)
-                    </Typography>
+
                     <Stack spacing={1}>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
                             10,000 Randomly Generated Treasure Chests Containing Battle gear on the
