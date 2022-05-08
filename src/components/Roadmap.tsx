@@ -15,7 +15,7 @@ const roadmapData = [
     },
     {
         title: 'Warriors',
-        content: `Azamat reserved these precious Treasures containing battle gear for only the most worthy warriors. Warriors are the next step into Treasure’s metaverse vision. "Warriors (by Treasure)" will be airdropped to all Treasure (For Warriors) holders 3 months after Mint. Snapshot will determine those eligible for this airdrop (Date TBA closer to time).`,
+        content: `Azamat reserved these precious Treasures containing battle gear for only the most worthy warriors. Warriors are the next step into Treasure’s metaverse vision. "Warriors (by Treasure)" is a planned airdrop to all Treasure (For Warriors) holders 2 months after Mint. Snapshot will determine those eligible for this airdrop (Date TBA closer to time).`,
         extras: [
             `Warriors are characters with their own unique set of abilities, stats, and skills. They can be customized by equipping items found in Treasure chests. They will play a Key role in our Multiplayer Play-to-Earn Game.`,
         ],
