@@ -15,12 +15,30 @@ const Masthead: React.FC = () => {
         >
             <Stack
                 justifyContent={'center'}
+                pb="15rem"
                 sx={{
                     height: '94vh',
                     width: '100vw',
                 }}
             >
                 <Stack textAlign="center" p="2.5rem">
+                    <Stack
+                        alignItems="center"
+                        justifyContent="center"
+                        spacing={1}
+                        sx={{
+                            bottom: 0,
+                            width: '100%',
+                        }}
+                    >
+                        <Image
+                            src="/assets/logo.png"
+                            height={200}
+                            width={200}
+                            layout="fixed"
+                            alt="scroll down"
+                        />
+                    </Stack>
                     <Typography fontSize={mdUp ? '3.25rem' : '2.5rem'} fontFamily="SF Pro">
                         Treasure. (for Warriors)
                     </Typography>
