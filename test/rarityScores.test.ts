@@ -4,15 +4,27 @@ import { Scores } from "metadata/rarityScores/types";
 import rarityScores from "../metadata/rarityScores";
 describe("assign rarity", () => {
   it("test 1", () => {
-    const chests: string[][] = (<string[][]>(
+    const chests: string[][] = <string[][]>(
       JSON.parse(fs.readFileSync("./test/chests/chests_1.json").toString())
-    ))
+    );
     const rs = rarityScores();
     rs.addChests(chests);
     const res: List<any> = List(
       (<Scores["chestScores"]>rs.getScores().get("chestScores")).valueSeq()
     );
-    const final = res.sortBy((val) => val.get("avgScore")).reverse().toJS();
+    const final = res
+      .sortBy((val) => val.get("avgScore"))
+      .reverse()
+      .toJS();
+
+
+    let topItems = (<number[]>(
+      final.slice(0, 100).map((val) => (<any>val).items.length)
+    )).sort((a, b) => a - b);
+    console.log(topItems[0]);
+    console.log(topItems[topItems.length-1]);
+    console.log(topItems.reduce((p,n) => p+n)/topItems.length);
+
 
     fs.writeFileSync(
       "./test/reports/chestScores.json",

@@ -5,11 +5,15 @@ export const defaultTheme = {
         mode: 'dark',
         primary: {
             main: '#313131',
+            // main: '#313131',
+
             dark: '#0e1c56',
             // main: '#ff2e93',
         },
         secondary: {
             main: '#FF8F00',
+            // main: '#FF8F00',
+
             // main: '#00e6b3',
         },
         // twitter: {

@@ -1,6 +1,5 @@
-import { Icon, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { FC } from 'react';
-import { HiOutlineChevronRight } from 'react-icons/hi';
 
 type RoadmapItemType = {
     title: string;
@@ -22,12 +21,6 @@ const RoadmapItem: FC<RoadmapItemType> = ({ title, content, extras }) => (
         // py={2}
     >
         <Stack direction="row" alignItems="baseline" justifyContent="center">
-            <Icon
-                /* @ts-ignore */
-                color="#FFFFFF"
-                sx={{ height: '16px', fontWeight: 'bold' }}
-                component={HiOutlineChevronRight}
-            />
             <Typography fontSize="1.6rem" color="secondary" sx={{ textTransform: 'uppercase' }}>
                 {title}
             </Typography>

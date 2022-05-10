@@ -5,7 +5,7 @@ pragma solidity ^0.8.13;
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 
-import "hardhat/console.sol";
+// import "hardhat/console.sol";
 
 contract TreasureMetadata {
     using Strings for uint256;
@@ -20,6 +20,9 @@ contract TreasureMetadata {
         string title;
         string attributeStr;
     }
+
+    uint16 internal _canvasSize = 700;
+    bool internal _canvasLocked = false;
 
     uint32[] private _numItemWts = [
         50747683,
@@ -92,9 +95,15 @@ contract TreasureMetadata {
     function buildURI(uint256 tokenId) internal view returns (string memory) {
         Trait[] memory traits = _buildTraits(tokenId);
         string[] memory parts = new string[](traits.length * 2 + 1);
-        parts[
-            0
-        ] = '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 700 700"><style>.base { fill: black; font-family: aleo; font-size: 19px; }</style><style>.title { fill: black; font-family: aleo; font-size: 28px; font-style: bold; }</style><rect width="100%" height="100%" fill="#FF8F00" /><text x="34" y="34" class="base">';
+        parts[0] = string(
+            abi.encodePacked(
+                '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 ',
+                (uint256(_canvasSize)).toString(),
+                " ",
+                (uint256(_canvasSize)).toString(),
+                '"><style>.base { fill: black; font-family: aleo; font-size: 19px; }</style><style>.title { fill: black; font-family: aleo; font-size: 28px; font-style: bold; }</style><rect width="100%" height="100%" fill="#FF8F00" /><text x="34" y="34" class="base">'
+            )
+        );
         for (uint256 i = 1; i < traits.length; i++) {
             parts[i * 2 - 1] = traits[i - 1].title;
             parts[i * 2] = string(
@@ -106,9 +115,15 @@ contract TreasureMetadata {
             );
         }
         parts[parts.length - 2] = traits[traits.length - 1].title;
-        parts[
-            parts.length - 1
-        ] = '</text><text x="370" y="670" class="title">Treasure. (For Warriors)</text></svg>';
+        parts[parts.length - 1] = string(
+            abi.encodePacked(
+                '</text><text x="',
+                (uint256(_canvasSize - 330)).toString(),
+                '" y="',
+                (uint256(_canvasSize - 30)).toString(),
+                '" class="title">Treasure. (For Warriors)</text></svg>'
+            )
+        );
         string memory output = "";
         for (uint256 i = 0; i < parts.length; i++) {
             output = string(abi.encodePacked(output, parts[i]));
@@ -360,8 +375,6 @@ contract TreasureMetadata {
         string memory select,
         uint256 index
     ) private view returns (Item memory) {
-        /*         console.log(select);
-        console.log(eqStr(select, "EXTRA")); */
         uint8[] memory indices = eqStr(select, "EXTRA")
             ? _items[category].extra[index]
             : _items[category].material[index];
@@ -463,18 +476,17 @@ contract TreasureMetadata {
             );
     }
 
-    // get random index of unsorted array with weights
     function _weightedRandom(
         uint32[] memory weights,
         uint256 seed,
-        uint256 sauce
+        uint256 _n
     ) private pure returns (uint256) {
-        sauce = (sauce > 18 || sauce < 8) ? 18 : sauce;
+        _n = (_n > 18 || _n < 8) ? 18 : _n;
 
         for (uint256 i = 0; i < weights.length; i++) {}
 
         uint256 cumWt = weights[weights.length - 1];
-        uint256 toAdd = ((cumWt / 13**2) * ((18 - sauce)**2)) >> 3;
+        uint256 toAdd = ((cumWt / 13**2) * ((18 - _n)**2)) >> 4;
         uint256 target = seed % (cumWt + toAdd * weights.length);
         for (uint256 i = 0; i < weights.length; i++) {
             if (target < (weights[i] + (toAdd * (i + 1)))) {

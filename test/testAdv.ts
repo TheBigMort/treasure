@@ -6,7 +6,6 @@ import { parseEther } from "ethers/lib/utils";
 import * as fs from "fs";
 import * as hre from "hardhat";
 import { Map as IMap } from "immutable";
-import { Payload } from "metadata/types";
 import { conConfig } from '../contract.config';
 dotenv.config();
 
@@ -21,12 +20,10 @@ const buildMint = (con: Contract, numMints: number) => {
 describe("Test all", () => {
   let t4w: Contract;
   let signers: SignerWithAddress[];
-  let prepped: Payload;
+
   beforeEach(async () => {
     try {
-      prepped = <Payload>(
-        JSON.parse(fs.readFileSync("./test/prep_cache.json").toString())
-      );
+
       signers = await hre.ethers.getSigners();
 
       const Treasure: ContractFactory = await hre.ethers.getContractFactory(
@@ -42,7 +39,7 @@ describe("Test all", () => {
   });
   it("get big data", async () => {
     
-    const numMints = 10000;
+    const numMints = 1000;
     const chests: string[][] = [];
     const bar = new cliProgress.SingleBar(
       {},

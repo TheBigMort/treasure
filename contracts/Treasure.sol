@@ -24,8 +24,8 @@ contract Treasure is
 {
     uint256 private constant PRICE = 0.0420 ether;
     uint256 private constant MAX_SUPPLY = 10000;
-    uint256 private constant MAX_MULTIMINT = 50;
-    uint256 private constant MAX_RESERVE = 150;
+    uint256 private constant MAX_MULTIMINT = 25;
+    uint256 private constant MAX_RESERVE = 250;
 
     address[] private _payees = [
         0x4f65cDFfE6c48ad287f005AD14E78ff6433c8d67,
@@ -113,6 +113,16 @@ contract Treasure is
         );
         _reserved += numMints;
         _mint(msg.sender, numMints);
+    }
+
+    function setCanvasSize(uint256 newSize) external onlyOwner {
+        require(!_canvasLocked, "Canvas size locked");
+        require(newSize < type(uint16).max, "Value too large");
+        _canvasSize = uint16(newSize);
+    }
+
+    function lockCanvasSize() external onlyOwner {
+        _canvasLocked = true;
     }
 
     function flipSaleState() external onlyOwner {
