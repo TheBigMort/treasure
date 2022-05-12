@@ -90,7 +90,7 @@ function addCollection(data: any) {
     .readdirSync("./test/chests")
     .filter((file) => file !== ".DS_Store");
   fs.writeFileSync(
-    `./test/chests/chests_${files.length+1}_mod_16.json`,
+    `./test/chests/chests_${files.length+1}.json`,
     JSON.stringify(data, null, 3)
   );
 }

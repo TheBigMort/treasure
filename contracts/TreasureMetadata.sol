@@ -5,8 +5,6 @@ pragma solidity ^0.8.13;
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
 
-// import "hardhat/console.sol";
-
 contract TreasureMetadata {
     using Strings for uint256;
 
@@ -158,15 +156,6 @@ contract TreasureMetadata {
         );
 
         return output;
-    }
-
-    function genTraits(uint256 tokenId) public view returns (string[] memory) {
-        Trait[] memory traits = _buildTraits(tokenId);
-        string[] memory temp = new string[](traits.length);
-        for (uint256 i = 0; i < traits.length; i++) {
-            temp[i] = traits[i].title;
-        }
-        return temp;
     }
 
     function _buildTraits(uint256 tokenId)
@@ -487,7 +476,7 @@ contract TreasureMetadata {
         for (uint256 i = 0; i < weights.length; i++) {}
 
         uint256 cumWt = weights[weights.length - 1];
-        uint256 toAdd = ((cumWt / 13**2) * ((18 - _n)**2)) >> 16;
+        uint256 toAdd = ((cumWt / 13**2) * ((18 - _n)**2)) >> 15;
         uint256 target = seed % (cumWt + toAdd * weights.length);
         for (uint256 i = 0; i < weights.length; i++) {
             if (target < (weights[i] + (toAdd * (i + 1)))) {

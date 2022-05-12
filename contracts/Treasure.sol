@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.13;
 
-import "./ERC721R.sol";
+import "./ERC721A.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./PaymentSplitter.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
@@ -15,7 +15,7 @@ import "../interfaces/ITreasure.sol";
  * @author Maxwell J. Rux
  */
 contract Treasure is
-    ERC721R,
+    ERC721A,
     Ownable,
     ReentrancyGuard,
     PaymentSplitter,
@@ -30,7 +30,7 @@ contract Treasure is
     address[] private _payees = [
         0x4f65cDFfE6c48ad287f005AD14E78ff6433c8d67,
         0x49B621D1Cc662cE293779EC775573d0568a0c713,
-        0x7db44F46Ee7385Ad0FD23Bd6323f8Bd80cF7fE92,
+        0x4427fCC55d41f5eD6989Fc7c6AC1542653192b05,
         0x3b20f287b08f39c21D695500E08268c87eCaeB37
     ];
     uint256[] private _shares = [20, 14, 33, 33];
@@ -54,7 +54,7 @@ contract Treasure is
         Item memory __material,
         Item memory __tail
     )
-        ERC721R("Treasure (for Warriors)", "T4W", MAX_SUPPLY)
+        ERC721A("Treasure (for Warriors)", "T4W")
         PaymentSplitter(_payees, _shares)
         TreasureMetadata(
             __head,
@@ -83,7 +83,7 @@ contract Treasure is
             "New mint exceeds maximum available supply"
         );
         require(numMints <= MAX_MULTIMINT, "Exceeds max mints per transaction");
-        _mintRandom(msg.sender, numMints);
+        _mint(msg.sender, numMints);
     }
 
     function mintReserveToAddress(uint256 numMints, address recipient)
@@ -99,7 +99,7 @@ contract Treasure is
             "New mint exceeds reserve supply"
         );
         _reserved += numMints;
-        _mintRandom(recipient, numMints);
+        _mint(recipient, numMints);
     }
 
     function mintReserve(uint256 numMints) external onlyOwner {
@@ -112,7 +112,7 @@ contract Treasure is
             "New mint exceeds reserve supply"
         );
         _reserved += numMints;
-        _mintRandom(msg.sender, numMints);
+        _mint(msg.sender, numMints);
     }
 
     function setCanvasSize(uint256 newSize) external onlyOwner {
@@ -133,9 +133,9 @@ contract Treasure is
         _contractURI = __contractURI;
     }
 
-    /*     function _startTokenId() internal view virtual override returns (uint256) {
+    function _startTokenId() internal view virtual override returns (uint256) {
         return 1;
-    } */
+    }
 
     function status() public view override returns (bool) {
         return _status;

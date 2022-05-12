@@ -204,7 +204,7 @@ const Navbar: FC = () => {
                     >
                         {active ? (
                             <Typography
-                                color="secondary"
+                                color="primary"
                                 fontFamily="SF Pro Display"
                                 sx={{
                                     whiteSpace: 'nowrap',

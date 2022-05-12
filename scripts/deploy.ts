@@ -1,14 +1,35 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-promise-executor-return */
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-undef */
 /* eslint-disable no-console */
 import { execSync } from 'child_process';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import { BigNumber } from 'ethers';
+import { formatUnits, parseUnits } from 'ethers/lib/utils';
 import * as hre from 'hardhat';
+import { ethers } from 'hardhat';
 import conArgs from '../contract.config';
 
+const maxGas = 150;
+async function waitForGasPriceBelow(max: BigNumber): Promise<BigNumber> {
+    console.log('Waiting for gas price below', formatUnits(max, 'gwei'), 'gwei');
+    while (true) {
+        const price = await ethers.provider.getGasPrice();
+        console.log(new Date().toLocaleString(), 'Gas Price:', formatUnits(price, 'gwei'), 'gwei');
+        if (price.lte(max)) {
+            console.log('Good enough!');
+            return price;
+        }
+        await new Promise((resolve) => setTimeout(resolve, 30000));
+    }
+}
 async function main() {
+    const gasPrice = await waitForGasPriceBelow(parseUnits(maxGas.toString(), 'gwei'));
+
     console.log('Deploying');
     const Con = await hre.ethers.getContractFactory('Treasure');
     console.log('Got Factory');
-    const con = await Con.deploy(...conArgs);
+    const con = await Con.deploy(...conArgs, { gasPrice });
     console.log('Contract Deployed');
     if (hre.network.name !== 'hardhat') {
         console.log('Waiting for 5 Confirmations');

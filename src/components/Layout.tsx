@@ -33,7 +33,7 @@ const Layout: FC<LayoutProps> = ({ children, seo }) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         [snackbar.isOpen]
     );
-    const { title, description, image = '/assets/treasure-logo.jpeg' } = seo ?? {};
+    const { title, description, image = '/assets/seo.jpg' } = seo ?? {};
     return (
         <>
             <NextSeo

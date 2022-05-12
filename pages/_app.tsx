@@ -26,7 +26,7 @@ function MyApp(props: MyAppProps) {
                     url: 'https://treasurenfts.io',
                     site_name: 'Treasure',
                     title: 'Treasure',
-                    images: [{ url: 'https://treasurenfts.io/assets/treasure-logo.jpeg' }],
+                    images: [{ url: 'https://treasurenfts.io/assets/seo.jpg' }],
                 }}
             />
             <DAppProvider config={config}>
