@@ -33,13 +33,14 @@ describe("Test all", () => {
 
       t4w = await Treasure.deploy(...conConfig.conArgs);
       await t4w.deployed();
+      await t4w.mintReserve(250);
     } catch (e) {
       console.error(e);
     }
   });
   it("get big data", async () => {
     
-    const numMints = 1000;
+    const numMints = 10000;
     const chests: string[][] = [];
     const bar = new cliProgress.SingleBar(
       {},
@@ -78,14 +79,8 @@ describe("Test all", () => {
   }) */
 
 /*   it("uri", async () => {
-    const start = Date.now();
-
-    for (let i = 0; i < 25; i++) {
-      const res = await t4w.genTraits(5);
-      console.log(i)
-    }
-    const end = Date.now();
-    console.log(end-start);
+    const uri = await t4w.tokenURI(121);
+    fs.writeFileSync('./test/stuff.txt', uri);
 
   }); */
 });
@@ -95,7 +90,7 @@ function addCollection(data: any) {
     .readdirSync("./test/chests")
     .filter((file) => file !== ".DS_Store");
   fs.writeFileSync(
-    `./test/chests/chests_${files.length+1}.json`,
+    `./test/chests/chests_${files.length+1}_mod_16.json`,
     JSON.stringify(data, null, 3)
   );
 }

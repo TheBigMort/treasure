@@ -5,7 +5,7 @@ import rarityScores from "../metadata/rarityScores";
 describe("assign rarity", () => {
   it("test 1", () => {
     const chests: string[][] = <string[][]>(
-      JSON.parse(fs.readFileSync("./test/chests/chests_1.json").toString())
+      JSON.parse(fs.readFileSync("./test/chests/chests_mod_16.json").toString())
     );
     const rs = rarityScores();
     rs.addChests(chests);

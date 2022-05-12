@@ -17,8 +17,8 @@ const conConfig = {
     conParams: {
         price: '0.0420',
         MAX_SUPPLY: 10000,
-        MAX_MULTIMINT: 50,
-        MAX_RESERVE: 150,
+        MAX_MULTIMINT: 25,
+        MAX_RESERVE: 250,
     },
     contractAddress:
         process.env.NEXT_PUBLIC_NETWORK === 'mainnet'

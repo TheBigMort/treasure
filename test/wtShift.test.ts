@@ -102,7 +102,7 @@ describe("weight shifting", () => {
         const toAdd =
           (divide(<number>iter.reduce((prev, next) => prev + next), 13 ** 2) *
             (18 - numItems) ** 2) >>>
-          4;
+          14;
         return elo + toAdd;
       });
       /*     const temp: IMap<string, number> = dataMap.map((elo, _, iter) => {

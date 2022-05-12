@@ -103,7 +103,7 @@ function getStats(): IStats {
   let repeats: IMap<string, number> = IMap();
   let chestReps: IMap<List<string>, IMap<string, number>> = IMap();
   analyzer().forEach(addItem);
-  console.log(repeats.filter((val) => val > 1).reduce((p, n) => p + n));
+  console.log(repeats.filter((val,key) => val > 1 && key.split(' ').length == 1).toJS());
   console.log(totals.toJS());
   fs.writeFileSync(
     "./test/reports/repeats.json",
@@ -194,17 +194,17 @@ async function getCumStats() {
   let anal: Analysis = IMap();
   const totals: IMap<number, number> = <IMap<number, number>>IMap(
     Object.entries({
-      "8": 119,
-      "9": 306,
-      "10": 648,
-      "11": 1248,
-      "12": 1775,
-      "13": 1906,
-      "14": 1673,
-      "15": 1197,
-      "16": 714,
-      "17": 300,
-      "18": 114,
+      '8': 119,
+      '9': 306,
+      '10': 648,
+      '11': 1248,
+      '12': 1775,
+      '13': 1906,
+      '14': 1673,
+      '15': 1197,
+      '16': 714,
+      '17': 300,
+      '18': 114
     }).map(([k, v]) => [parseInt(k), v])
   );
   let totalsMax = ((): number => {

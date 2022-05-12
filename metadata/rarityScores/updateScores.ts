@@ -29,14 +29,14 @@ export function updateScores(prev: IScores): IScores {
     (<Scores["itemScores"]>m).map((val: IChestItem) => {
       let total: number = 1;
       let nones: number = 0;
-      total *=
+      let mainScore =
         (<number>(
           prev.getIn([
             "mainItemTotals",
             val.get("mainCat")!,
             val.get("mainItem")!,
           ])
-        )) ** 4;
+        ));
       total *= <number>(<IMap<ModCat, string>>val.get("brokenDown"))
         .entrySeq()
         .toArray()
@@ -49,7 +49,7 @@ export function updateScores(prev: IScores): IScores {
           );
         })
         .reduce((p, n) => p * n);
-      return val.set("score", nones >= 4 ? total * 4000 : total);
+      return val.set("score", nones > 0 ? total * (mainScore**nones) : total);
     })
   );
 }

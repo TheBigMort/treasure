@@ -89,14 +89,15 @@ describe("Gas Tests", () => {
       }
       await Promise.all(firstMints);
     });
-    for (let i = 1; i <= conConfig.conParams.MAX_MULTIMINT; i += 5) {
-      const title: string = `mint(${i})`;
+    for (let i = 0; i <= conConfig.conParams.MAX_MULTIMINT; i += 5) {
+      const numMints: number = i || 1;
+      const title: string = `mint(${numMints})`;
       it(title, async () => {
         const avgs: number[] = [];
         for (let k = 0; k < 5; k += 1) {
           const mints: Promise<TransactionResponse>[] = [];
           for (let j = 0; j < signers.length; j += 1) {
-            mints.push(buildMint(lbr, signers[j], i));
+            mints.push(buildMint(lbr, signers[j], numMints));
           }
           const avg: number = average(<number[]>await getGas(mints));
           avgs.push(avg);
@@ -104,7 +105,7 @@ describe("Gas Tests", () => {
         gasMap.set(title, average(avgs));
       });
     }
-    for (let i = 10; i <= conConfig.conParams.MAX_RESERVE; i += 10) {
+/*     for (let i = 10; i <= 20; i += 10) {
       const title: string = `mintReserveToAddress(${i})`;
       it(title, async () => {
         const txs: Promise<TransactionResponse>[] = [];
@@ -136,7 +137,7 @@ describe("Gas Tests", () => {
         }
         gasMap.set(title, average(<number[]>await getGas(txs)));
       });
-    }
+    } */
   });
   describe("Contract Management", () => {
     beforeEach(async () => {

@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.13;
 
-import "./ERC721A.sol";
+import "./ERC721R.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "./PaymentSplitter.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
@@ -15,7 +15,7 @@ import "../interfaces/ITreasure.sol";
  * @author Maxwell J. Rux
  */
 contract Treasure is
-    ERC721A,
+    ERC721R,
     Ownable,
     ReentrancyGuard,
     PaymentSplitter,
@@ -54,7 +54,7 @@ contract Treasure is
         Item memory __material,
         Item memory __tail
     )
-        ERC721A("Treasure (for Warriors)", "T4W")
+        ERC721R("Treasure (for Warriors)", "T4W", MAX_SUPPLY)
         PaymentSplitter(_payees, _shares)
         TreasureMetadata(
             __head,
@@ -75,15 +75,15 @@ contract Treasure is
         require(_status, "Sale is paused");
         require(msg.value >= price() * numMints, "Not enough ether sent");
         require(
-            _totalMinted() + numMints <= MAX_SUPPLY,
+            totalSupply() + numMints <= MAX_SUPPLY,
             "New mint exceeds maximum supply"
         );
         require(
-            _totalMinted() + numMints <= MAX_SUPPLY - MAX_RESERVE + _reserved,
+            totalSupply() + numMints <= MAX_SUPPLY - MAX_RESERVE + _reserved,
             "New mint exceeds maximum available supply"
         );
         require(numMints <= MAX_MULTIMINT, "Exceeds max mints per transaction");
-        _mint(msg.sender, numMints);
+        _mintRandom(msg.sender, numMints);
     }
 
     function mintReserveToAddress(uint256 numMints, address recipient)
@@ -91,7 +91,7 @@ contract Treasure is
         onlyOwner
     {
         require(
-            _totalMinted() + numMints <= MAX_SUPPLY,
+            totalSupply() + numMints <= MAX_SUPPLY,
             "New mint exceeds maximum supply"
         );
         require(
@@ -99,12 +99,12 @@ contract Treasure is
             "New mint exceeds reserve supply"
         );
         _reserved += numMints;
-        _mint(recipient, numMints);
+        _mintRandom(recipient, numMints);
     }
 
     function mintReserve(uint256 numMints) external onlyOwner {
         require(
-            _totalMinted() + numMints <= MAX_SUPPLY,
+            totalSupply() + numMints <= MAX_SUPPLY,
             "New mint exceeds maximum supply"
         );
         require(
@@ -112,7 +112,7 @@ contract Treasure is
             "New mint exceeds reserve supply"
         );
         _reserved += numMints;
-        _mint(msg.sender, numMints);
+        _mintRandom(msg.sender, numMints);
     }
 
     function setCanvasSize(uint256 newSize) external onlyOwner {
@@ -132,6 +132,10 @@ contract Treasure is
     function setContractURI(string memory __contractURI) external onlyOwner {
         _contractURI = __contractURI;
     }
+
+    /*     function _startTokenId() internal view virtual override returns (uint256) {
+        return 1;
+    } */
 
     function status() public view override returns (bool) {
         return _status;
@@ -155,7 +159,7 @@ contract Treasure is
         override
         returns (string memory)
     {
-        if (!_exists(tokenId)) revert URIQueryForNonexistentToken();
+        require(_exists(tokenId), "Query for nonexistant token");
         return buildURI(tokenId);
     }
 }

@@ -42,11 +42,11 @@ const Masthead: React.FC = () => {
 
                     <Stack spacing={1}>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
-                            10,000 Randomly Generated Treasure Chests Containing Battle gear on the
-                            Ethereum blockchain
+                            10,000 Randomly Generated Treasure Chests Containing Battle Gear on the
+                            Ethereum Blockchain
                         </Typography>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
-                            1 Billion+ Possible chest combinations
+                            1 Billion+ Possible Chest Combinations
                         </Typography>
                         <Typography fontSize={mdUp ? '1.3rem' : '1.2rem'} fontFamily="SF Pro">
                             1 Million+ Possible Traits

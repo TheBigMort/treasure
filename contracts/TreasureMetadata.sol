@@ -9,6 +9,7 @@ import "@openzeppelin/contracts/utils/Base64.sol";
 
 contract TreasureMetadata {
     using Strings for uint256;
+
     mapping(string => Item) private _items;
     struct Item {
         string[] title;
@@ -38,7 +39,7 @@ contract TreasureMetadata {
         4252017622
     ];
     uint32[] private _numModWts = [
-        2616626,
+        1308313,
         108917067,
         853020151,
         3189013217,
@@ -486,7 +487,7 @@ contract TreasureMetadata {
         for (uint256 i = 0; i < weights.length; i++) {}
 
         uint256 cumWt = weights[weights.length - 1];
-        uint256 toAdd = ((cumWt / 13**2) * ((18 - _n)**2)) >> 4;
+        uint256 toAdd = ((cumWt / 13**2) * ((18 - _n)**2)) >> 16;
         uint256 target = seed % (cumWt + toAdd * weights.length);
         for (uint256 i = 0; i < weights.length; i++) {
             if (target < (weights[i] + (toAdd * (i + 1)))) {
