@@ -3,7 +3,6 @@ import Container from '@src/components/Container';
 import FAQ from '@src/components/FAQ';
 import Layout from '@src/components/Layout';
 import Masthead from '@src/components/masthead';
-import Timer from '@src/components/timer';
 import Head from 'next/head';
 import React from 'react';
 
@@ -17,7 +16,8 @@ export default function Home() {
             <Masthead />
             <Container>
                 <Roadmap />
-                <Timer />
+
+                {/*  <Mint /> */}
 
                 <FAQ />
             </Container>
