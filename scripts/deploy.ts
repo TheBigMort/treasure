@@ -10,7 +10,7 @@ import * as hre from 'hardhat';
 import { ethers } from 'hardhat';
 import conArgs from '../contract.config';
 
-const maxGas = 150;
+const maxGas = 30;
 async function waitForGasPriceBelow(max: BigNumber): Promise<BigNumber> {
     console.log('Waiting for gas price below', formatUnits(max, 'gwei'), 'gwei');
     while (true) {
@@ -20,16 +20,16 @@ async function waitForGasPriceBelow(max: BigNumber): Promise<BigNumber> {
             console.log('Good enough!');
             return price;
         }
-        await new Promise((resolve) => setTimeout(resolve, 30000));
+        await new Promise((resolve) => setTimeout(resolve, 15_000));
     }
 }
 async function main() {
-    const gasPrice = await waitForGasPriceBelow(parseUnits(maxGas.toString(), 'gwei'));
+    await waitForGasPriceBelow(parseUnits(maxGas.toString(), 'gwei'));
 
     console.log('Deploying');
     const Con = await hre.ethers.getContractFactory('Treasure');
     console.log('Got Factory');
-    const con = await Con.deploy(...conArgs, { gasPrice });
+    const con = await Con.deploy(...conArgs);
     console.log('Contract Deployed');
     if (hre.network.name !== 'hardhat') {
         console.log('Waiting for 5 Confirmations');

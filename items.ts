@@ -10,7 +10,7 @@ const prepped = {
                 "Pirate's",
                 "Hero's",
                 "Bandit's",
-                "Wizzard's",
+                "Wizard's",
                 "Warrior's",
                 "Archer's",
                 "Assassin's",
@@ -197,7 +197,7 @@ const prepped = {
                 'Hat',
                 'Halo',
                 'Hood',
-                'Sombraro',
+                'Sombrero',
                 'Turban',
             ],
             weight: [

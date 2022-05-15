@@ -10,7 +10,7 @@ const roadmapData = [
         extras: [
             `Public mint (0.0420ETH each) ${
                 process.env.NEXT_PUBLIC_MINTDATE?.split(' ')[0]
-            } 12PM CST / 5PM UTC`,
+            } 12PM CST / 6PM UTC`,
         ],
     },
     {

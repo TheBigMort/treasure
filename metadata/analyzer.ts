@@ -103,7 +103,7 @@ function getStats(): IStats {
   let repeats: IMap<string, number> = IMap();
   let chestReps: IMap<List<string>, IMap<string, number>> = IMap();
   analyzer().forEach(addItem);
-  console.log(repeats.filter((val,key) => val > 1 && key.split(' ').length == 1).toJS());
+  console.log(repeats.valueSeq().toArray().filter((v) => v > 1).reduce((p,n) => p+n));
   console.log(totals.toJS());
   fs.writeFileSync(
     "./test/reports/repeats.json",

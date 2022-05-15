@@ -38,9 +38,9 @@ contract TreasureMetadata {
     ];
     uint32[] private _numModWts = [
         1308313,
-        108917067,
-        853020151,
-        3189013217,
+        107608754,
+        851711838,
+        3187704904,
         4252017622
     ];
     uint32[] private _itemCatWts = [

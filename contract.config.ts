@@ -22,7 +22,7 @@ const conConfig = {
     },
     contractAddress:
         process.env.NEXT_PUBLIC_NETWORK === 'mainnet'
-            ? ''
+            ? '0xEad23f848BfAf4B2086D4BcB4508FDE8990480b5'
             : '0xFdd33230E1183DD58cC6349eD81670ddF5766434',
     chainIndex: process.env.NEXT_PUBLIC_NETWORK === 'mainnet' ? 1 : 4,
 };
