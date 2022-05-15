@@ -30,11 +30,11 @@ const Timer: FC = () => {
     const [seconds, setSecs] = useState(0);
     const [read2mint, setReady2Mint] = useState(false);
     useEffect(() => {
-        const target = new Date(process.env.NEXT_PUBLIC_MINTDATE!);
+        const target = 1652634000;
 
         const interval = setInterval(() => {
             const now = new Date();
-            const diff = target.getTime() - now.getTime();
+            const diff = target - now.getTime();
             if (diff < 0 && !read2mint) {
                 setReady2Mint(true);
             }
