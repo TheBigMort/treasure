@@ -3,6 +3,7 @@ import Container from '@src/components/Container';
 import FAQ from '@src/components/FAQ';
 import Layout from '@src/components/Layout';
 import Masthead from '@src/components/masthead';
+import Mint from '@src/components/Mint';
 import Head from 'next/head';
 import React from 'react';
 
@@ -17,7 +18,7 @@ export default function Home() {
             <Container>
                 <Roadmap />
 
-                {/*  <Mint /> */}
+                <Mint />
 
                 <FAQ />
             </Container>
