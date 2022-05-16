@@ -6,5 +6,12 @@ const nodeURLs: string[] = [
     'https://rpc.flashbots.net/',
     'https://rpc.ankr.com/eth',
 ];
+const rarityThresholds = {
+    legend: 98,
+    epic: 90,
+    unique: 72.5,
+    uncommon: 45,
+    common: 0,
+};
 
-export { nodeURLs };
+export { nodeURLs, rarityThresholds };

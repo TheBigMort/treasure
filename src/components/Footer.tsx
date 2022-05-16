@@ -54,7 +54,7 @@ const Footer: FC = () => (
                 <FaDiscord style={{ height: '32px', width: '32px' }} />
             </Link>
             <Link
-                href=""
+                href="https://opensea.io/collection/treasure-for-warriors"
                 target="_blank"
                 // component={SvgIcon}
                 // viewBox="0 0 100 100"

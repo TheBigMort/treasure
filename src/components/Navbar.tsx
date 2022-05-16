@@ -162,7 +162,7 @@ const Navbar: FC = () => {
                         <FaDiscord style={{ height: '24px', width: '24px' }} />
                     </Link>
                     <Link
-                        href=""
+                        href="https://opensea.io/collection/treasure-for-warriors"
                         target="_blank"
                         // component={SvgIcon}
                         // viewBox="0 0 100 100"
