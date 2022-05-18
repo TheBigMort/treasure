@@ -35,30 +35,14 @@ listenProv.on(eventFilter, async (receipt, from = receipt.topics[1]) => {
     ); */
     console.log('init scores done');
 })();
-/* router.get(
-    '/updateScores',
-    asyncHandler(async (req, res, next) => {
-        // const start = Date.now();
-        try {
-            await updateMetadata();
-
-            res.sendStatus(200);
-        } catch (e) {
-            console.error(e);
-        }
-                const end = Date.now();
-        console.log(Math.round((end - start) * 100) / 100);
-    })
-); */
 router.get('/recal', (req, res, next) => {
-    updateMetadata();
-    // mClient.cacheScores(scores.getScores());
+    scores.recalibrate()
     res.sendStatus(200);
 });
 router.get(
     '/getScores',
     asyncHandler(async (req, res, next) => {
-        scores.recalibrate();
+        //scores.recalibrate();
 
         res.json(scores.getScores().toJS());
     })

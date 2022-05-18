@@ -1,12 +1,12 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-use-before-define */
 import Immutable from 'api/node_modules/immutable/dist/immutable';
-import { IScores } from 'api/util/rarityScores/types';
+import { IScores } from 'api/src/util/rarityScores/types';
 import axios from 'axios';
 
 export default async function getScores(): Promise<IScores> {
     const res = await axios({
-        url: 'http://localhost:8080/getScores',
+        url: 'https://treasure-rarity.herokuapp.com/getScores',
         method: 'get',
     });
     if (res.status !== 200) throw Error(`INTERNAL SERVER ERROR CODE: ${res.status}`);

@@ -30,6 +30,6 @@
     "scripts",
     "test"
 , "metadata/stuff.js", "api/util/asyncHandler.js"  ],
-  "exclude": ["node_modules", "metadata"],
+  "exclude": ["node_modules", "metadata", "api"],
   "files": ["hardhat.config.ts"]
 }
