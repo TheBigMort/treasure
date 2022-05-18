@@ -43,6 +43,14 @@ const NavDrawer: FC = () => {
                 <Button component={Link} href="/#mint" color="secondary" variant="text">
                     MINT
                 </Button>
+                <Button
+                    component={Link}
+                    href="https://coinsbench.com/treasure-nfts-advanced-on-chain-metadata-generation-1cc6fb6b4653"
+                    color="secondary"
+                    variant="text"
+                >
+                    INSPIRATION BEHIND TREASURE
+                </Button>
                 <Button component={Link} href="/#roadmap" color="secondary" variant="text">
                     ROADMAP
                 </Button>
