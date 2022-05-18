@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-hooks/rules-of-hooks */
+import { IChest, IScores, Scores } from '@components/rarityScores/types';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { Alert, Stack, TextField, Typography } from '@mui/material';
 import Container from '@src/components/Container';
@@ -9,7 +10,6 @@ import useMatchesMediaQuery from '@src/hooks/useMatchesMediaQuery';
 import snackbarAtom from '@src/store/jotai';
 import getScores from '@src/utils/getScores';
 import track from '@src/utils/track';
-import { IChest, IScores, Scores } from 'api/util/rarityScores/types';
 import { conConfig } from 'contract.config';
 import { Map as IMap } from 'immutable';
 import { useAtom } from 'jotai';

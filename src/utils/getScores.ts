@@ -1,8 +1,8 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-use-before-define */
-import Immutable from 'api/node_modules/immutable/dist/immutable';
-import { IScores } from 'api/src/util/rarityScores/types';
+import { IScores } from '@components/rarityScores/types';
 import axios from 'axios';
+import Immutable from 'immutable';
 
 export default async function getScores(): Promise<IScores> {
     const res = await axios({

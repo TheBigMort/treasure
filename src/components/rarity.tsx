@@ -1,7 +1,7 @@
+import { IChest, IChestItem } from '@components/rarityScores/types';
 import { Stack, Typography } from '@mui/material';
 import useMatchesMediaQuery from '@src/hooks/useMatchesMediaQuery';
 import theme from '@styles/theme';
-import { IChest, IChestItem } from 'api/util/rarityScores/types';
 import { FC } from 'react';
 
 export type RarityQuery = {
