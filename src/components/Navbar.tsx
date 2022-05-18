@@ -75,7 +75,7 @@ const Navbar: FC = () => {
                     {/*  Dashboard */}
                     {/* </Button> */}
                     <Link
-                        href="#faq"
+                        href="/#faq"
                         sx={{
                             color: theme.palette.primary.main,
                             textDecoration: 'none',
@@ -93,7 +93,7 @@ const Navbar: FC = () => {
                         </Typography>
                     </Link>
                     <Link
-                        href="#mint"
+                        href="/#mint"
                         sx={{
                             color: theme.palette.primary.main,
                             textDecoration: 'none',
@@ -107,11 +107,11 @@ const Navbar: FC = () => {
                         }}
                     >
                         <Typography fontFamily="Aleo Bold" fontSize="1.5rem">
-                            Plunder (Mint)
+                            Mint
                         </Typography>
                     </Link>
                     <Link
-                        href="#roadmap"
+                        href="/#roadmap"
                         sx={{
                             color: theme.palette.primary.main,
                             textDecoration: 'none',
@@ -126,6 +126,24 @@ const Navbar: FC = () => {
                     >
                         <Typography fontFamily="Aleo Bold" fontSize="1.5rem">
                             Roadmap
+                        </Typography>
+                    </Link>
+                    <Link
+                        href="/rarity-analyzer"
+                        sx={{
+                            color: theme.palette.primary.main,
+                            textDecoration: 'none',
+                            transition,
+                            transitionDuration: '500ms',
+                            ':hover': {
+                                color: '#FFFFFF',
+                                cursor: 'pointer',
+                                transform: 'translateY(-2px)',
+                            },
+                        }}
+                    >
+                        <Typography fontFamily="Aleo Bold" fontSize="1.5rem">
+                            Rarities
                         </Typography>
                     </Link>
 

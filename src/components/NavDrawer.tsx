@@ -40,14 +40,17 @@ const NavDrawer: FC = () => {
                 }}
                 onClick={closeNavDrawer}
             >
-                <Button component={Link} href="#mint" color="secondary" variant="text">
+                <Button component={Link} href="/#mint" color="secondary" variant="text">
                     MINT
                 </Button>
-                <Button component={Link} href="#roadmap" color="secondary" variant="text">
+                <Button component={Link} href="/#roadmap" color="secondary" variant="text">
                     ROADMAP
                 </Button>
-                <Button component={Link} href="#faq" color="secondary" variant="text">
+                <Button component={Link} href="/#faq" color="secondary" variant="text">
                     FAQ
+                </Button>
+                <Button component={Link} href="/rarity-analyzer" color="secondary" variant="text">
+                    RARITY ANALYZER
                 </Button>
                 <Stack direction="row" spacing={3} justifyContent="center" mt="2rem !important">
                     <Link
