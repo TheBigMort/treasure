@@ -8,7 +8,7 @@ import Layout from '@src/components/Layout';
 import Rarity from '@src/components/rarity';
 import useMatchesMediaQuery from '@src/hooks/useMatchesMediaQuery';
 import snackbarAtom from '@src/store/jotai';
-import getScores from '@src/utils/getScores';
+import { getScores, recal } from '@src/utils/apiEndpoints';
 import track from '@src/utils/track';
 import { conConfig } from 'contract.config';
 import { Map as IMap } from 'immutable';
@@ -24,7 +24,8 @@ export default function RarityAnalyzer() {
     const [chestId, setChestId] = useState(1);
     const [numChests, setNumChests] = useState(0);
     const [, setSnackbar] = useAtom(snackbarAtom);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isSearchLoading, setIsSearchLoading] = useState(false);
+    const [isMetaLoading, setIsMetaLoading] = useState(false);
 
     return (
         <Layout seo={{ title: '' }}>
@@ -85,7 +86,7 @@ export default function RarityAnalyzer() {
                         />
                     </Stack>
                     <LoadingButton
-                        loading={isLoading}
+                        loading={isMetaLoading}
                         // disabled={mintAmount === 0 || chainId !== 1 || minted === 520}
                         variant="contained"
                         disableElevation
@@ -94,7 +95,47 @@ export default function RarityAnalyzer() {
                         onClick={async () => {
                             track('mint_button:clicked', chestId.toString());
                             try {
-                                setIsLoading(true);
+                                setIsMetaLoading(true);
+                                await recal();
+                                setSnackbar({
+                                    isOpen: true,
+                                    message: 'Metadata Refresh Queued. Please Allow up to 1 Minute',
+                                    severity: 'success',
+                                });
+                                setIsMetaLoading(false);
+                            } catch (err: any) {
+                                setIsMetaLoading(false);
+                                const errMessage =
+                                    err?.error?.message ?? err?.reason ?? err?.message ?? err;
+                                // eslint-disable-next-line no-console
+                                console.warn('ERROR: ', {
+                                    message: errMessage,
+                                });
+                                // console.warn("ERROR: ", {
+                                //   message: err?.error.data.originalError.message ?? "",
+                                // });
+                                setSnackbar({
+                                    isOpen: true,
+                                    message: errMessage,
+                                    severity: 'error',
+                                });
+                            }
+                        }}
+                        //
+                    >
+                        {'Refresh Metadata'}
+                    </LoadingButton>
+                    <LoadingButton
+                        loading={isSearchLoading}
+                        // disabled={mintAmount === 0 || chainId !== 1 || minted === 520}
+                        variant="contained"
+                        disableElevation
+                        color="secondary"
+                        sx={{ mb: '1.5rem', alignSelf: 'center' }}
+                        onClick={async () => {
+                            track('mint_button:clicked', chestId.toString());
+                            try {
+                                setIsSearchLoading(true);
                                 const scores: IScores = await getScores();
                                 const cs = scores.get('chestScores');
                                 if (!cs) throw Error(`INTERNAL SERVER ERROR CODE: 506`);
@@ -115,9 +156,9 @@ export default function RarityAnalyzer() {
                                 });
                                 setQueried(true);
                                 setNumChests(cs.size);
-                                setIsLoading(false);
+                                setIsSearchLoading(false);
                             } catch (err: any) {
-                                setIsLoading(false);
+                                setIsSearchLoading(false);
                                 const errMessage =
                                     err?.error?.message ?? err?.reason ?? err?.message ?? err;
                                 // eslint-disable-next-line no-console
