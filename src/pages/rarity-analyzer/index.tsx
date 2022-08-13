@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-hooks/rules-of-hooks */
-import { IChest, IScores, Scores } from '@components/rarityScores/types';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { Alert, Stack, TextField, Typography } from '@mui/material';
 import Container from '@src/components/Container';
 import Layout from '@src/components/Layout';
 import Rarity from '@src/components/rarity';
+import { IChest, IScores, Scores } from '@src/components/rarityScores/types';
 import useMatchesMediaQuery from '@src/hooks/useMatchesMediaQuery';
 import snackbarAtom from '@src/store/jotai';
 import { getScores, recal } from '@src/utils/apiEndpoints';
@@ -14,7 +14,7 @@ import { conConfig } from 'contract.config';
 import { Map as IMap } from 'immutable';
 import { useAtom } from 'jotai';
 import Head from 'next/head';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // contractURI - bafybeihvwstfo6frl4bjadfzsalvdotr5x4cstfwccoa4mo2p6kuetzvay
 export default function RarityAnalyzer() {

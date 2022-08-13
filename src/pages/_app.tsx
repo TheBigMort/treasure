@@ -1,8 +1,8 @@
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+import theme from '@src/styles/theme';
 import createEmotionCache from '@src/utils/createEmotionCache';
-import theme from '@styles/theme';
 import { Config, DAppProvider } from '@usedapp/core';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';

@@ -41,3 +41,6 @@ cache
 chests
 reports
 /api
+
+# hardhat
+artifacts

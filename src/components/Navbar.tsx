@@ -1,8 +1,8 @@
-import Link from '@components/Link';
 import { AppBar, Button, Stack, SvgIcon, Toolbar, Typography } from '@mui/material';
+import Link from '@src/components/Link';
 import { navDrawerAtom } from '@src/store/jotai';
-import theme from '@styles/theme';
-import transition from '@styles/utils';
+import theme from '@src/styles/theme';
+import transition from '@src/styles/utils';
 import { useEthers, useLookupAddress } from '@usedapp/core';
 import { Spin as Hamburger } from 'hamburger-react';
 import { useAtom } from 'jotai';

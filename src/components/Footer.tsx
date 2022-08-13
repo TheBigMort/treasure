@@ -1,6 +1,6 @@
 import { Link, Stack, SvgIcon } from '@mui/material';
-import theme from '@styles/theme';
-import transition from '@styles/utils';
+import theme from '@src/styles/theme';
+import transition from '@src/styles/utils';
 import { FC } from 'react';
 import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import NavDrawer from './NavDrawer';

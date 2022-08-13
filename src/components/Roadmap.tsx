@@ -1,6 +1,6 @@
-import RoadmapItem from '@components/RoadmapItem';
-import Title from '@components/Title';
 import { Stack } from '@mui/material';
+import RoadmapItem from '@src/components/RoadmapItem';
+import Title from '@src/components/Title';
 import { FC } from 'react';
 
 const roadmapData = [

@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
-import Progress from '@components/Progress';
-import Title from '@components/Title';
 import { JsonRpcSigner } from '@ethersproject/providers';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { Alert, IconButton, Stack, TextField, Typography } from '@mui/material';
+import Progress from '@src/components/Progress';
+import Title from '@src/components/Title';
 import snackbarAtom from '@src/store/jotai';
 import track from '@src/utils/track';
 import { useContractCall, useEthers } from '@usedapp/core';

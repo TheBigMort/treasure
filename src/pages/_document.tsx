@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 import createEmotionServer from '@emotion/server/create-instance';
+import theme from '@src/styles/theme';
 import createEmotionCache from '@src/utils/createEmotionCache';
-import theme from '@styles/theme';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import * as React from 'react';
 

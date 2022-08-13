@@ -3,8 +3,6 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@styles/*": ["styles/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -29,7 +27,7 @@
     "tailwind.config.js",
     "scripts",
     "test"
-, "metadata/stuff.js", "api/util/asyncHandler.js"  ],
-  "exclude": ["node_modules", "metadata", "api"],
+, "metadata/stuff.js", "api/util/asyncHandler.js", "styles"  ],
+  "exclude": ["node_modules", "metadata", "api","test","contracts","interfaces","public","scripts"],
   "files": ["hardhat.config.ts"]
 }

@@ -1,12 +1,12 @@
 /* eslint-disable no-shadow */
-import Title from '@components/Title';
 import { Stack } from '@mui/material/';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import MuiAccordionSummary, { AccordionSummaryProps } from '@mui/material/AccordionSummary';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import theme from '@styles/theme';
+import Title from '@src/components/Title';
+import theme from '@src/styles/theme';
 import { FC, useState } from 'react';
 import { IoChevronForward } from 'react-icons/io5';
 

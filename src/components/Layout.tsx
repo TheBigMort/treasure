@@ -1,10 +1,10 @@
 /* eslint-disable react/display-name */
-import Footer from '@components/Footer';
-import Navbar from '@components/Navbar';
-import NavDrawer from '@components/NavDrawer';
 import { Box, Slide } from '@mui/material/';
 import MuiAlert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
+import Footer from '@src/components/Footer';
+import Navbar from '@src/components/Navbar';
+import NavDrawer from '@src/components/NavDrawer';
 import snackbarAtom from '@src/store/jotai';
 import { useAtom } from 'jotai';
 import { NextSeo } from 'next-seo';

@@ -37,11 +37,11 @@ const config = {
         hardhat: {},
         rinkeby: {
             url: `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`,
-            accounts: [process.env.PRIVATE_KEY_DEV],
+            accounts: [],
         },
         mainnet: {
             url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
-            accounts: [process.env.PRIVATE_KEY_MAIN],
+            accounts: [],
         },
     },
     gasReporter: {
